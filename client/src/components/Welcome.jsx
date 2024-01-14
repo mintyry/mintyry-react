@@ -1,12 +1,12 @@
 import '../styles/Welcome.css';
 import { useState } from 'react';
 
-function Section() {
+function Welcome() {
     return (
         <section>
-            <h1>This worked!</h1>
+            <h1>Welcome</h1>
         </section>
     );
 }
 
-export default Section;
+export default Welcome;
