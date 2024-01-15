@@ -1,3 +1,42 @@
 * {
     font-family: 'Reenie Beanie', cursive, arial;
 }
+
+@keyframes handwriting {
+    0% {
+      width: 0;
+    }
+    5% {
+      width: 3%;
+    }
+    25% {
+      width: 15%;
+    }
+    50% {
+        width:40%
+    }
+    60% {
+        width: 50%
+    }
+    70% {
+        width: 65%
+    }
+    80% {
+        width: 75%
+    }
+    90% {
+        width: 85%
+    }
+    95% {
+        width: 93%
+    }
+    /* Add more keyframes for each stroke of the letter */
+    100% {
+      width: 100%;
+    }
+  }
+
+  #welcome {
+    overflow: hidden;
+    animation: handwriting 5s linear;
+  }

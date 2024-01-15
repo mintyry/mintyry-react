@@ -49,7 +49,7 @@ function Welcome() {
                     ?
                     (
                         !showMessage ?
-                            <h1>Welcome...</h1> :
+                            <h1 id="welcome">Welcome...</h1> :
                             <h1>to my <strong>horcrux...</strong></h1>
                     )
                     :
