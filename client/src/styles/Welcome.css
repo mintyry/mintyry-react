@@ -1,20 +1,15 @@
 * {
     font-family: 'Reenie Beanie', cursive, arial;
-    
 }
 
+/* so svg doesn't break page on smaller dimensions */
 svg {
   max-width: 100%;
   height: auto;
 }
-/* 
-path {
-    font-size: 1rem;
-} */
 
-
+/* animated text */
 #one-w {
-
     stroke-dasharray: 154.53529357910156;
     stroke-dashoffset: 154.53529357910156;
     animation: 0.5s onew linear forwards;
@@ -34,7 +29,6 @@ path {
     stroke-dashoffset: 77.61138153076172;
     animation: 0.5s onee linear forwards;
     animation-delay: 2.5s;
-
 }
 @keyframes onee {
     0%{
@@ -50,7 +44,6 @@ path {
     stroke-dashoffset: 59.53776550292969;
     animation: 0.2s onel linear forwards;
     animation-delay: 3s;
-
 }
 @keyframes onel{
     0%{
@@ -66,7 +59,6 @@ path {
     stroke-dashoffset: 58.59319305419922;
     animation: 0.2s onec linear forwards;
     animation-delay: 3.5s;
-
 }
 @keyframes onec{
     0%{
@@ -82,7 +74,6 @@ path {
     stroke-dashoffset: 50.501827239990234;
     animation: 0.2s oneo linear forwards;
     animation-delay: 4s;
-
 }
 @keyframes oneo{
     0%{
@@ -98,7 +89,6 @@ path {
     stroke-dashoffset: 122.5776138305664;
     animation: 0.2s onem linear forwards;
     animation-delay: 4.5s;
-
 }
 @keyframes onem{
     0%{
@@ -114,7 +104,6 @@ path {
     stroke-dashoffset: 70.73726654052734;
     animation: 0.2s onees linear forwards;
     animation-delay: 5s;
-
 }
 @keyframes onees{
     0%{
@@ -130,7 +119,6 @@ path {
     stroke-dashoffset: 0.7035197019577026;
     animation: 0.2s onedf linear forwards;
     animation-delay: 5.5s;
-
 }
 @keyframes onedf{
     0%{
@@ -146,7 +134,6 @@ path {
     stroke-dashoffset: 5.390911102294922;
     animation: 0.2s oneds linear forwards;
     animation-delay: 5.75s;
-
 }
 @keyframes oneds{
     0%{
@@ -162,7 +149,6 @@ path {
     stroke-dashoffset: 0.7016089558601379;
     animation: 0.2s onedt linear forwards;
     animation-delay: 6s;
-
 }
 @keyframes onedt{
     0%{
@@ -184,7 +170,286 @@ Welcome.jsx:47 letter 7 is 0.7035197019577026
 Welcome.jsx:47 letter 8 is 5.390911102294922
 Welcome.jsx:47 letter 9 is 0.7016089558601379 */
 
+/* second message */
+#two-t{
+  stroke-dasharray: 53.74624252319336;
+  stroke-dashoffset: 53.74624252319336;
+  animation: 0.2s twot linear forwards;
+  animation-delay: 1s;
+}
+@keyframes twot{
+  0%{
+      stroke-dashoffset: 53.74624252319336;
+  }
+  100% {
+      stroke-dashoffset: 0;
+  }
+}
 
+#two-t-cross{
+  stroke-dasharray: 54.0112419128418;
+  stroke-dashoffset: 54.0112419128418;
+  animation: 0.2s twotc linear forwards;
+  animation-delay: 1.25s;
+}
+@keyframes twotc{
+  0%{
+      stroke-dashoffset: 54.0112419128418;
+  }
+  100% {
+      stroke-dashoffset: 0;
+  }
+}
+
+#two-o{
+  stroke-dasharray: 58.480628967285156;
+  stroke-dashoffset: 58.480628967285156;
+  animation: 0.2s twoo linear forwards;
+  animation-delay: 1.75s;
+}
+@keyframes twoo{
+  0%{
+      stroke-dashoffset: 58.480628967285156;
+  }
+  100% {
+      stroke-dashoffset: 0;
+  }
+}
+
+#two-m{
+  stroke-dasharray: 126.18976593017578;
+  stroke-dashoffset: 126.18976593017578;
+  animation: 0.3s twom linear forwards;
+  animation-delay: 2.25s;
+}
+@keyframes twom{
+  0%{
+      stroke-dashoffset: 126.18976593017578;
+  }
+  100% {
+      stroke-dashoffset: 0;
+  }
+}
+
+#two-y{
+  stroke-dasharray: 22.272682189941406;
+  stroke-dashoffset: 22.272682189941406;
+  animation: 0.2s twoy linear forwards;
+  animation-delay: 2.75s;
+}
+@keyframes twoy{
+  0%{
+      stroke-dashoffset: 22.272682189941406;
+  }
+  100% {
+      stroke-dashoffset: 0;
+  }
+}
+
+#two-y-cross{
+  stroke-dasharray: 61.164955139160156;
+  stroke-dashoffset: 61.164955139160156;
+  animation: 0.2s twoyc linear forwards;
+  animation-delay: 3s;
+}
+@keyframes twoyc{
+  0%{
+      stroke-dashoffset: 61.164955139160156;
+  }
+  100% {
+      stroke-dashoffset: 0;
+  }
+}
+
+#two-h{
+  stroke-dasharray: 104.31822204589844;
+  stroke-dashoffset: 104.31822204589844;
+  animation: 0.2s twoh linear forwards;
+  animation-delay: 3.5s;
+}
+@keyframes twoh{
+  0%{
+      stroke-dashoffset: 104.31822204589844;
+  }
+  100% {
+      stroke-dashoffset: 0;
+  }
+}
+
+#two-o-second{
+  stroke-dasharray: 53.20269012451172;
+  stroke-dashoffset: 53.20269012451172;
+  animation: 0.2s twoos linear forwards;
+  animation-delay: 4s;
+}
+@keyframes twoos{
+  0%{
+      stroke-dashoffset: 53.20269012451172;
+  }
+  100% {
+      stroke-dashoffset: 0;
+  }
+}
+
+#two-r{
+  stroke-dasharray: 50.6392936706543;
+  stroke-dashoffset: 50.6392936706543;
+  animation: 0.2s twor linear forwards;
+  animation-delay: 4.5s;
+}
+@keyframes twor{
+  0%{
+      stroke-dashoffset: 50.6392936706543;
+  }
+  100% {
+      stroke-dashoffset: 0;
+  }
+}
+
+#two-c{
+  stroke-dasharray: 54.06721496582031;
+  stroke-dashoffset: 54.06721496582031;
+  animation: 0.2s twoc linear forwards;
+  animation-delay: 5s;
+}
+@keyframes twoc{
+  0%{
+      stroke-dashoffset: 54.06721496582031;
+  }
+  100% {
+      stroke-dashoffset: 0;
+  }
+}
+
+#two-r-second{
+  stroke-dasharray: 52.705528259277344;
+  stroke-dashoffset: 52.705528259277344;
+  animation: 0.2s twors linear forwards;
+  animation-delay: 5.5s;
+}
+@keyframes twors{
+  0%{
+      stroke-dashoffset: 52.705528259277344;
+  }
+  100% {
+      stroke-dashoffset: 0;
+  }
+}
+
+#two-u{
+  stroke-dasharray: 76.96058654785156;
+  stroke-dashoffset: 76.96058654785156;
+  animation: 0.2s twou linear forwards;
+  animation-delay: 6s;
+}
+@keyframes twou{
+  0%{
+      stroke-dashoffset: 76.96058654785156;
+  }
+  100% {
+      stroke-dashoffset: 0;
+  }
+}
+
+#two-x{
+  stroke-dasharray: 41.01964569091797;
+  stroke-dashoffset: 41.01964569091797;
+  animation: 0.2s twox linear forwards;
+  animation-delay: 6.5s;
+}
+@keyframes twox{
+  0%{
+      stroke-dashoffset: 41.01964569091797;
+  }
+  100% {
+      stroke-dashoffset: 0;
+  }
+}
+
+#two-x-cross{
+  stroke-dasharray: 41.873199462890625;
+  stroke-dashoffset: 41.873199462890625;
+  animation: 0.2s twoxc linear forwards;
+  animation-delay: 6.75s;
+}
+@keyframes twoxc{
+  0%{
+      stroke-dashoffset: 41.873199462890625;
+  }
+  100% {
+      stroke-dashoffset: 0;
+  }
+}
+
+#two-dot-first{
+  stroke-dasharray: 3.4212093353271484;
+  stroke-dashoffset: 3.4212093353271484;
+  animation: 0.2s twodf linear forwards;
+  animation-delay: 7.25s;
+}
+@keyframes twodf{
+  0%{
+      stroke-dashoffset: 3.4212093353271484;
+  }
+  100% {
+      stroke-dashoffset: 0;
+  }
+}
+
+#two-dot-second{
+  stroke-dasharray: 8.134641647338867;
+  stroke-dashoffset: 8.134641647338867;
+  animation: 0.2s twods linear forwards;
+  animation-delay: 7.5s;
+}
+@keyframes twods{
+  0%{
+      stroke-dashoffset: 8.134641647338867;
+  }
+  100% {
+      stroke-dashoffset: 0;
+  }
+}
+
+#two-dot-third{
+  stroke-dasharray: 1.8288180828094482;
+  stroke-dashoffset: 1.8288180828094482;
+  animation: 0.2s twodt linear forwards;
+  animation-delay: 7.75s;
+}
+@keyframes twodt{
+  0%{
+      stroke-dashoffset: 1.8288180828094482;
+  }
+  100% {
+      stroke-dashoffset: 0;
+  }
+}
+
+/* letter 0 is 53.74624252319336
+Welcome.jsx:47 letter 1 is 54.0112419128418
+Welcome.jsx:47 letter 2 is 58.480628967285156
+Welcome.jsx:47 letter 3 is 126.18976593017578
+Welcome.jsx:47 letter 4 is 22.272682189941406
+Welcome.jsx:47 letter 5 is 61.164955139160156
+Welcome.jsx:47 letter 6 is 104.31822204589844
+Welcome.jsx:47 letter 7 is 53.20269012451172
+Welcome.jsx:47 letter 8 is 50.6392936706543
+Welcome.jsx:47 letter 9 is 54.06721496582031
+Welcome.jsx:47 letter 10 is 52.705528259277344
+Welcome.jsx:47 letter 11 is 76.96058654785156
+Welcome.jsx:47 letter 12 is 41.01964569091797
+Welcome.jsx:47 letter 13 is 41.873199462890625
+Welcome.jsx:47 letter 14 is 3.4212093353271484
+Welcome.jsx:47 letter 15 is 8.134641647338867
+Welcome.jsx:47 letter 16 is 1.8288180828094482 */
+
+
+
+
+
+
+/* --SMOKE DISSOLVE-- */
 /* body {
   background: black;
   overflow: hidden;
