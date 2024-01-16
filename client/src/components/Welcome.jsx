@@ -56,9 +56,8 @@ function Welcome() {
                 !showSection
                     ?
                     (
-                        !showMessage ?
-
-
+                        !showMessage
+                            ?
                             <svg width="470" height="165" viewBox="0 0 470 165" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="470" height="165" fill="transparent" />
                                 <path id="one-w" d="M94.8047 79.1686C94.8047 68.3018 99.7616 103.111 109.261 108.388C122.192 115.572 99.4549 76.9872 115.241 98.2384C120.453 105.254 143.986 118.884 141.556 100.665C140.212 90.5799 135.062 59.7796 123.102 55.7927" stroke="#A7FFCA" strokeWidth="3" strokeLinecap="round" />
@@ -73,7 +72,6 @@ function Welcome() {
                                 <path id="one-dot-third" d="M379.006 108.696C378.977 108.493 379.098 109.128 379.006 109.311" stroke="#A7FFCA" strokeWidth="3" strokeLinecap="round" />
                             </svg>
                             :
-
                             <svg width="519" height="87" viewBox="0 0 519 87" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path id="two-t" d="M30.55 17.489C30.55 1.70168 34.5682 49.1506 40.4315 63.8088" stroke="#A7FFCA" strokeWidth="3" strokeLinecap="round" />
                                 <path id="two-t-cross" d="M12.6396 48.9865C-3.19998 48.9865 41.747 35.9596 54.6362 26.753" stroke="#A7FFCA" strokeWidth="3" strokeLinecap="round" />
@@ -93,7 +91,6 @@ function Welcome() {
                                 <path id="two-dot-second" d="M485.851 64.4344C487.954 62.0684 484.818 69.1777 488.177 65.8194C488.723 65.2736 485.976 65.1246 486.321 64.4344" stroke="#A7FFCA" strokeWidth="3" strokeLinecap="round" />
                                 <path id="two-dot-third" d="M499.492 64.4344C499.431 63.9424 498.541 65.7252 499.022 65.8455" stroke="#A7FFCA" strokeWidth="3" strokeLinecap="round" />
                             </svg>
-
                     )
                     :
                     (
