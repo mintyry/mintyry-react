@@ -1,55 +1,273 @@
 * {
     font-family: 'Reenie Beanie', cursive, arial;
+    
 }
+/* 
+path {
+    font-size: 1rem;
+} */
 
 
-#one {
+#one-w {
 
-    stroke-dasharray: 293;
-    stroke-dashoffset: 293;
-    animation: 0.5s one linear forwards;
-}
-
- #two {
-    stroke-dasharray: 44.47992706298828;
-    stroke-dashoffset: 44.47992706298828;
-    animation: 0.5s two linear forwards;
-    animation-delay: 1s;
-
-}
-
-/*.three {
-    stroke-dasharray: 15;
-    stroke-dashoffset: 15;
-    animation: 0.2s two linear forwards;
+    stroke-dasharray: 154.53529357910156;
+    stroke-dashoffset: 154.53529357910156;
+    animation: 0.5s onew linear forwards;
     animation-delay: 2s;
-
 }
-*/
-
-@keyframes one {
+@keyframes onew {
     0%{
-        stroke-dashoffset: 293;
+        stroke-dashoffset: 154.53529357910156;
     }
     100% {
         stroke-dashoffset: 0;
     }
 }
 
-@keyframes two {
+ #one-e {
+    stroke-dasharray: 77.61138153076172;
+    stroke-dashoffset: 77.61138153076172;
+    animation: 0.5s onee linear forwards;
+    animation-delay: 2.5s;
+
+}
+@keyframes onee {
     0%{
-        stroke-dashoffset: 44.47992706298828;
+        stroke-dashoffset: 77.61138153076172;
     }
     100% {
         stroke-dashoffset: 0;
     }
 }
 
-/* @keyframes three {
+#one-l{
+    stroke-dasharray: 59.53776550292969;
+    stroke-dashoffset: 59.53776550292969;
+    animation: 0.2s onel linear forwards;
+    animation-delay: 3s;
+
+}
+@keyframes onel{
     0%{
-        stroke-dashoffset: 15;
+        stroke-dashoffset: 59.53776550292969;
     }
     100% {
         stroke-dashoffset: 0;
     }
+}
+
+#one-c{
+    stroke-dasharray: 58.59319305419922;
+    stroke-dashoffset: 58.59319305419922;
+    animation: 0.2s onec linear forwards;
+    animation-delay: 3.5s;
+
+}
+@keyframes onec{
+    0%{
+        stroke-dashoffset: 58.59319305419922;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+#one-o{
+    stroke-dasharray: 50.501827239990234;
+    stroke-dashoffset: 50.501827239990234;
+    animation: 0.2s oneo linear forwards;
+    animation-delay: 4s;
+
+}
+@keyframes oneo{
+    0%{
+        stroke-dashoffset: 50.501827239990234;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+#one-m{
+    stroke-dasharray: 122.5776138305664;
+    stroke-dashoffset: 122.5776138305664;
+    animation: 0.2s onem linear forwards;
+    animation-delay: 4.5s;
+
+}
+@keyframes onem{
+    0%{
+        stroke-dashoffset: 122.5776138305664;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+#one-e-second{
+    stroke-dasharray: 70.73726654052734;
+    stroke-dashoffset: 70.73726654052734;
+    animation: 0.2s onees linear forwards;
+    animation-delay: 5s;
+
+}
+@keyframes onees{
+    0%{
+        stroke-dashoffset: 70.73726654052734;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+#one-dot-first{
+    stroke-dasharray: 0.7035197019577026;
+    stroke-dashoffset: 0.7035197019577026;
+    animation: 0.2s onedf linear forwards;
+    animation-delay: 5.5s;
+
+}
+@keyframes onedf{
+    0%{
+        stroke-dashoffset: 0.7035197019577026;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+#one-dot-second{
+    stroke-dasharray: 5.390911102294922;
+    stroke-dashoffset: 5.390911102294922;
+    animation: 0.2s oneds linear forwards;
+    animation-delay: 5.75s;
+
+}
+@keyframes oneds{
+    0%{
+        stroke-dashoffset: 5.390911102294922;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+#one-dot-third{
+    stroke-dasharray: 0.7016089558601379;
+    stroke-dashoffset: 0.7016089558601379;
+    animation: 0.2s onedt linear forwards;
+    animation-delay: 6s;
+
+}
+@keyframes onedt{
+    0%{
+        stroke-dashoffset: 0.7016089558601379;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* letter 0 is 154.53529357910156
+Welcome.jsx:47 letter 1 is 77.61138153076172
+Welcome.jsx:47 letter 2 is 59.53776550292969
+Welcome.jsx:47 letter 3 is 58.59319305419922
+Welcome.jsx:47 letter 4 is 50.501827239990234
+Welcome.jsx:47 letter 5 is 122.5776138305664
+Welcome.jsx:47 letter 6 is 70.73726654052734
+Welcome.jsx:47 letter 7 is 0.7035197019577026
+Welcome.jsx:47 letter 8 is 5.390911102294922
+Welcome.jsx:47 letter 9 is 0.7016089558601379 */
+
+
+/* body {
+  background: black;
+  overflow: hidden;
+  font: 5vw/100vh "Finger Paint";
+  text-align: center;
+  color: transparent;
+  backface-visibility: hidden;
+} */
+
+/* path {
+  display: inline-block;
+  text-shadow: 0 0 0 whitesmoke;
+  animation: smoky 5s 3s both;
+}
+
+path:nth-child(even){
+  animation-name: smoky-mirror;
+}
+
+@keyframes smoky {
+  60% {
+    text-shadow: 0 0 40px whitesmoke;
+  }
+  to {
+    transform:
+      translate3d(15rem,-8rem,0)
+      rotate(-40deg)
+      skewX(70deg)
+      scale(1.5);
+    text-shadow: 0 0 20px whitesmoke;
+    opacity: 0;
+  }
+}
+
+@keyframes smoky-mirror {
+  60% {
+    text-shadow: 0 0 40px whitesmoke; }
+  to {
+    transform:
+      translate3d(18rem,-8rem,0)
+      rotate(-40deg) 
+      skewX(-70deg)
+      scale(2);
+     text-shadow: 0 0 20px whitesmoke;
+    opacity: 0;
+  }
+}
+
+path:nth-of-type(1) {
+  animation-delay: 3.1s;
+}
+
+path:nth-of-type(2) {
+  animation-delay: 3.2s;
+}
+
+path:nth-of-type(3) {
+  animation-delay: 3.3s;
+}
+
+path:nth-of-type(4) {
+  animation-delay: 3.4s;
+}
+
+path:nth-of-type(5) {
+  animation-delay: 3.5s;
+}
+
+path:nth-of-type(6) {
+  animation-delay: 3.6s;
+}
+
+path:nth-of-type(7) {
+  animation-delay: 3.7s;
+}
+
+path:nth-of-type(8) {
+  animation-delay: 3.8s;
+}
+
+path:nth-of-type(9) {
+  animation-delay: 3.9s;
+}
+
+path:nth-of-type(10) {
+  animation-delay: 4s;
+}
+
+path:nth-of-type(11) {
+  animation-delay: 4.1s;
 } */
