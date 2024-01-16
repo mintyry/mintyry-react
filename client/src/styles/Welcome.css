@@ -3,24 +3,33 @@
 }
 
 
-.one {
+#one {
 
-    stroke-dasharray: 66;
-    stroke-dashoffset: 66;
+    stroke-dasharray: 293;
+    stroke-dashoffset: 293;
     animation: 0.5s one linear forwards;
 }
 
-.two {
-    stroke-dasharray: 157;
-    stroke-dashoffset: 157;
+ #two {
+    stroke-dasharray: 44.47992706298828;
+    stroke-dashoffset: 44.47992706298828;
     animation: 0.5s two linear forwards;
     animation-delay: 1s;
 
 }
 
+/*.three {
+    stroke-dasharray: 15;
+    stroke-dashoffset: 15;
+    animation: 0.2s two linear forwards;
+    animation-delay: 2s;
+
+}
+*/
+
 @keyframes one {
     0%{
-        stroke-dashoffset: 66;
+        stroke-dashoffset: 293;
     }
     100% {
         stroke-dashoffset: 0;
@@ -29,9 +38,18 @@
 
 @keyframes two {
     0%{
-        stroke-dashoffset: 157;
+        stroke-dashoffset: 44.47992706298828;
     }
     100% {
         stroke-dashoffset: 0;
     }
 }
+
+/* @keyframes three {
+    0%{
+        stroke-dashoffset: 15;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+} */
