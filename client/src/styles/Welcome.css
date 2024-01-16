@@ -2,6 +2,10 @@
     font-family: 'Reenie Beanie', cursive, arial;
 }
 
+body {
+  background: radial-gradient(#242424, #1e1e1e, #111111, #000000);
+}
+
 /* so svg doesn't break page on smaller dimensions */
 svg {
   max-width: 100%;
