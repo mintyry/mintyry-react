@@ -1,4 +1,4 @@
-import '../styles/Home.css';
+
 import { useState, useEffect } from 'react';
 import Header from './Header';
 import Footer from './Footer';

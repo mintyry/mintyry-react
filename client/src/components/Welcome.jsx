@@ -65,7 +65,7 @@ function Welcome() {
     //if showMessage is falsy, show Welcome, otherwise, show horcrux line
     //if showHome is truthy, we show Home component.
     return (
-        <>
+        <div id="welcome">
             {
                 !showHome
                     ?
@@ -112,7 +112,7 @@ function Welcome() {
                         <Home />
                     )
             }
-        </>
+        </div>
     );
 }
 
