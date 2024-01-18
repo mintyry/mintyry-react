@@ -1,12 +1,12 @@
 import '../styles/Welcome.css';
 import { useState, useEffect } from 'react';
-import Section from './Section';
+import Home from './Home';
 
 
 function Welcome() {
     // initially setting states to false (dont show)
     const [showMessage, setMessage] = useState(false);
-    const [showSection, setShowSection] = useState(false);
+    const [showHome, setShowHome] = useState(false);
 
     // useEffect: renders content conditionally
     // This one will progress welcome message when app is clicked anywhere.
@@ -31,25 +31,25 @@ function Welcome() {
     }, []);//ends useEffect
 
 
-    // This useEffect is for leading to the next component (Section);
+    // This useEffect is for leading to the next component (Home);
     //showmessage is in useEffect, so locally scoped, so if useEffect doesnt run, code cant evaluate 35, 43 allows useEffect to run
     useEffect(() => {
         // function changes setShowFunction state to true
 
-        function openSection() {
-            setShowSection(true);
+        function openHome() {
+            setShowHome(true);
         };
 
         // if showMessage is truthy, it will add an event listener
         if (showMessage) {
-            document.addEventListener('click', openSection);
-            // open section regardless if no click in time
-            if (showSection === false) {
-                setTimeout(openSection, 12000);
+            document.addEventListener('click', openHome);
+            // open Home regardless if no click in time
+            if (showHome === false) {
+                setTimeout(openHome, 12000);
             }
             // cleanup fn to remove event listener when component is dismounted
             return () => {
-                document.removeEventListener('click', openSection);
+                document.removeEventListener('click', openHome);
             }
         }
         // this dependency ensures that this useeffect runs when showMessage's value changes
@@ -61,13 +61,13 @@ function Welcome() {
         console.log(`letter ${i} is ${welcome[i].getTotalLength()}`);
     }
 
-    // if it showSection is falsy, then show the welcome message...
+    // if it showHome is falsy, then show the welcome message...
     //if showMessage is falsy, show Welcome, otherwise, show horcrux line
-    //if showSection is truthy, we show Section component.
+    //if showHome is truthy, we show Home component.
     return (
         <>
             {
-                !showSection
+                !showHome
                     ?
                     (
                         !showMessage
@@ -86,6 +86,7 @@ function Welcome() {
                                 <path id="one-dot-third" d="M379.006 108.696C378.977 108.493 379.098 109.128 379.006 109.311" stroke="#A7FFCA" strokeWidth="3" strokeLinecap="round" />
                             </svg>
                             :
+                            
                             <svg width="519" height="87" viewBox="0 0 519 87" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path id="two-t" d="M30.55 17.489C30.55 1.70168 34.5682 49.1506 40.4315 63.8088" stroke="#A7FFCA" strokeWidth="3" strokeLinecap="round" />
                                 <path id="two-t-cross" d="M12.6396 48.9865C-3.19998 48.9865 41.747 35.9596 54.6362 26.753" stroke="#A7FFCA" strokeWidth="3" strokeLinecap="round" />
@@ -108,7 +109,7 @@ function Welcome() {
                     )
                     :
                     (
-                        <Section />
+                        <Home />
                     )
             }
         </>
