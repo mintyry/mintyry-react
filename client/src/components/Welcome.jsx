@@ -1,6 +1,6 @@
 import '../styles/Welcome.css';
 import { useState, useEffect } from 'react';
-import Section from './Section'
+import Section from './Section';
 
 
 function Welcome() {
