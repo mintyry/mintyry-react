@@ -17,22 +17,36 @@ function Welcome() {
         };
         // event listener on page; when page is clicked, runs clickWelcome()
         document.addEventListener('click', clickWelcome);
+
+        // in case user doesn't click, message still changes after some time
+        if (showMessage === false) {
+            setTimeout(clickWelcome, 9000);
+        }
+
         // cleanup function; removes event listener to run clickWelcome()
         return () => {
             document.removeEventListener('click', clickWelcome);
         };
+
     }, []);//ends useEffect
 
 
     // This useEffect is for leading to the next component (Section);
+    //showmessage is in useEffect, so locally scoped, so if useEffect doesnt run, code cant evaluate 35, 43 allows useEffect to run
     useEffect(() => {
         // function changes setShowFunction state to true
+
         function openSection() {
             setShowSection(true);
         };
+
         // if showMessage is truthy, it will add an event listener
         if (showMessage) {
             document.addEventListener('click', openSection);
+            // open section regardless if no click in time
+            if (showSection === false) {
+                setTimeout(openSection, 12000);
+            }
             // cleanup fn to remove event listener when component is dismounted
             return () => {
                 document.removeEventListener('click', openSection);
