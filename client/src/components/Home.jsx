@@ -7,7 +7,7 @@ import Footer from './Footer';
 
 function Home() {
     // changes body bg color
-    document.body.style = 'background: teal; ';
+    // document.body.style = 'background: teal; ';
 
 
     return (
