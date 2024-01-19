@@ -86,7 +86,7 @@ function Welcome() {
                                 <path id="one-dot-third" d="M379.006 108.696C378.977 108.493 379.098 109.128 379.006 109.311" stroke="#A7FFCA" strokeWidth="3" strokeLinecap="round" />
                             </svg>
                             :
-                            
+
                             <svg width="519" height="87" viewBox="0 0 519 87" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path id="two-t" d="M30.55 17.489C30.55 1.70168 34.5682 49.1506 40.4315 63.8088" stroke="#A7FFCA" strokeWidth="3" strokeLinecap="round" />
                                 <path id="two-t-cross" d="M12.6396 48.9865C-3.19998 48.9865 41.747 35.9596 54.6362 26.753" stroke="#A7FFCA" strokeWidth="3" strokeLinecap="round" />

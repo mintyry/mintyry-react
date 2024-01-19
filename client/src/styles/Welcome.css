@@ -3,12 +3,72 @@ body {
   background: radial-gradient(#242424, #1e1e1e, #111111, #000000);
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+    background-image: url('../assets/blacksmoke.jpg');
+  background-size:cover;
+        -webkit-animation: slidein 50s;
+        animation: slidein 50s;
+
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;              
 }
+
+@-webkit-keyframes slidein {
+from {background-position: center; background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+}
+
+@keyframes slidein {
+from {background-position: center;background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+
+}
+
+
+
+/* #welcome
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  border-radius: 3px;
+}
+.welcome svg{
+  text-align:center;
+
+} */
+
+
+
+
+
 
 /* so svg doesn't break page on smaller dimensions */
 svg {
   max-width: 100%;
   height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 
