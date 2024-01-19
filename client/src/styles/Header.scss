@@ -1,6 +1,6 @@
 header {
     background: black;
-
+  width: 100%;
   }
   
   .container {
@@ -10,6 +10,7 @@ header {
     height: 25vh;
     flex-direction: column;
     padding: 1rem;
+    overflow-x: hidden;
   }
   
   .glitch {
@@ -18,7 +19,7 @@ header {
     color: rgb(185, 255, 218);
     position: relative;
     font-size: 6rem;
-    width: 100%;
+    width: 100vw;
     text-align: center;
   
     animation: glitch 5s 5s infinite;
@@ -30,10 +31,10 @@ header {
     left: -2px;
     text-shadow: -5px 0 magenta;
     background: black;
-    // overflow: hidden;
+    overflow: hidden;
     top: 0;
     animation: noise-1 3s linear infinite alternate-reverse, glitch 5s 5.05s infinite;
-    width: 100%;
+    width: 100vw;
     text-align: center;
   }
   
@@ -46,7 +47,7 @@ header {
     overflow: hidden;
     top: 0;
     animation: noise-2 3s linear infinite alternate-reverse, glitch 5s 5s infinite;
-    width: 100%;
+    width: 100vw;
     text-align: center;
   }
   
