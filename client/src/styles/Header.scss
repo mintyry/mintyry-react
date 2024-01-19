@@ -1,32 +1,34 @@
 header {
     background: black;
-   
+
   }
   
   .container {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 40%;
-    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    flex-direction: column;
+    padding: 1rem;
   }
   
   .glitch {
     font-family: "impact", sans-serif;
     font-style: italic;
-    color: rgb(223, 191, 191);
+    color: rgb(185, 255, 218);
     position: relative;
-    font-size: 9vw;
-    margin: 70px 200px;
+    font-size: 6rem;
+  
     animation: glitch 5s 5s infinite;
   }
   
   .glitch::before {
     content: attr(data-text);
     position: absolute;
-    left: -2px;
+    // left: -2px;
     text-shadow: -5px 0 magenta;
     background: black;
-    overflow: hidden;
+    // overflow: hidden;
     top: 0;
     animation: noise-1 3s linear infinite alternate-reverse, glitch 5s 5.05s infinite;
   }
@@ -35,7 +37,7 @@ header {
     content: attr(data-text);
     position: absolute;
     left: 2px;
-    text-shadow: -5px 0 lightgreen;
+    text-shadow: -5px 0 rgb(255, 134, 97);
     background: black;
     overflow: hidden;
     top: 0;
@@ -117,13 +119,12 @@ header {
   .subtitle {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
-    font-size: .8vw;
+    font-size: 1vh;
     color: rgba(165, 141, 141, .4);
     text-transform: uppercase;
     letter-spacing: 1em;
     text-align: center;
-    position: absolute;
-    left: 17%;
+  
     animation: glitch-2 5s 5.02s infinite;
   }
   
