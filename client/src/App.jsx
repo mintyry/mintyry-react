@@ -3,8 +3,10 @@ import { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import './styles/Home.scss';
+// material ui components
 import Box from "@mui/material/Box";
 import BottomNavigation from "@mui/material/BottomNavigation";
+import Container from "@mui/material/Container";
 
 function App() {
   // using location to read what path/page we are on; states are for hiding header and footer
@@ -30,7 +32,9 @@ function App() {
       {!hideHeader && <Header />}
 
       {/* outlet injects page here */}
-      <Outlet />
+      <Container>
+        <Outlet />
+      </Container>
 
       {/* short circuit to hide header if at root path (Welcome) */}
       {!hideFooterNav &&
