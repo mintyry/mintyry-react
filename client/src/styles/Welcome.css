@@ -19,6 +19,14 @@ body {
   animation-direction: alternate;
 }
 
+#root {
+  height: 100vh;
+}
+
+* {
+  outline: 1px red solid;
+}
+
 @-webkit-keyframes slidein {
   from {
     background-position: top;
