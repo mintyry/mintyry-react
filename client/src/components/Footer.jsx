@@ -19,6 +19,19 @@ import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Box from '@mui/material/Box';
 import '../styles/Footer.css';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#b9ffda',
+      // light: will be calculated from palette.primary.main,
+      // dark: will be calculated from palette.primary.main,
+      // contrastText: will be calculated to contrast with palette.primary.main
+    }
+ 
+  },
+});
 
 export default function Footer() {
   return (
@@ -32,12 +45,13 @@ export default function Footer() {
         },
       }}
     >
-
-      <ButtonGroup variant="text" aria-label="text button group" id="linkColor">
-        <Button>Reach</Button>
-        <Button>Read</Button>
-        <Button>Relish</Button>
-      </ButtonGroup>
+      <ThemeProvider theme={theme}>
+        <ButtonGroup variant="text" aria-label="text button group" color="primary">
+          <Button>Reach</Button>
+          <Button>Read</Button>
+          <Button>Relish</Button>
+        </ButtonGroup>
+      </ThemeProvider>
     </Box>
   );
 }

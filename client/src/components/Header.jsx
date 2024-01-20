@@ -4,12 +4,12 @@ import '../styles/Header.scss';
 function Header() {
   return (
     <header>
-      <div class="container">
-        <div class="glitch" data-text="MINTY.RY">MINTY.RY</div>
-        <div class="glow">MINTY.RY</div>
-        <p class="subtitle">BY RYAN ECLARIN</p>
+      <div className="container">
+        <div className="glitch" data-text="MINTY.RY">MINTY.RY</div>
+        <div className="glow">MINTY.RY</div>
+        <p className="subtitle">BY RYAN ECLARIN</p>
       </div>
-      <div class="scanlines"></div>
+      <div className="scanlines"></div>
     </header>
   );
 }
