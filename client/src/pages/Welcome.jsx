@@ -1,6 +1,7 @@
 import '../styles/Welcome.css';
 import { useState, useEffect } from 'react';
 import Home from './Home';
+import { redirect } from 'react-router-dom';
 
 
 function Welcome() {

@@ -1,19 +1,3 @@
-// import { useState } from 'react';
-
-// function Footer() {
-//   return (
-//     <footer>
-//       <ButtonGroup variant="text" aria-label="text button group">
-//         <Button>One</Button>
-//         <Button>Two</Button>
-//         <Button>Three</Button>
-//       </ButtonGroup>
-//     </footer>
-//   );
-// }
-
-// export default Footer;
-
 import * as React from 'react';
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
@@ -45,8 +29,9 @@ export default function Footer() {
       <ThemeProvider theme={theme}>
         <ButtonGroup variant="text" aria-label="text button group" color="primary" className="links">
           <Button><p>Reach <span className="extra">out to me</span></p></Button>
-          <Button><p>Read <span className="extra">about me</span></p></Button>
-          <Button><p>Revere <span className="extra">my work</span></p></Button>
+          <Button><p>&nbsp;Read <span className="extra">about me</span></p></Button>
+          <Button><p>&nbsp;Revere <span className="extra">my work</span></p></Button>
+          <Button><p>Résumé <span className="extra">&nbsp;&nbsp;&nbsp;$&nbsp;$&nbsp;$</span></p></Button>
         </ButtonGroup>
       </ThemeProvider>
     </Box>
