@@ -65,7 +65,7 @@ function Welcome() {
     // having it in its own useEffect allows it to work and no error messages.
     useEffect(() => {
         if (showHome) {
-            navigate('/about');
+            navigate('/home');
         }
     }, [showHome, navigate]);
 

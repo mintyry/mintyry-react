@@ -6,7 +6,7 @@ import Error from './pages/Error';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import Welcome from './pages/Welcome.jsx';
-// import Home from './pages/Home';
+import Home from './pages/Home';
 import About from './pages/About';
 
 // set up structure of app and its pages(children)
@@ -20,10 +20,10 @@ const router = createBrowserRouter([
         index: true,
         element: <Welcome />
       },
-      // {
-      //   path: '/home',
-      //   element: <Home />,
-      // },
+      {
+        path: '/home',
+        element: <Home />,
+      },
       {
         path: '/about',
         element: <About />,
