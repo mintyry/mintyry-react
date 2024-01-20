@@ -46,10 +46,10 @@ export default function Footer() {
       }}
     >
       <ThemeProvider theme={theme}>
-        <ButtonGroup variant="text" aria-label="text button group" color="primary">
-          <Button>Reach</Button>
-          <Button>Read</Button>
-          <Button>Relish</Button>
+        <ButtonGroup variant="text" aria-label="text button group" color="primary" className="links">
+          <Button><p>Reach <span className="extra">out to me</span></p></Button>
+          <Button><p>Read <span className="extra">all about me</span></p></Button>
+          <Button><p>Revere <span className="extra">my work</span></p></Button>
         </ButtonGroup>
       </ThemeProvider>
     </Box>

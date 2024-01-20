@@ -15,11 +15,12 @@ function Home() {
     return (
         <>
             <Header />
+
             <section>
                 <p>hiiiii</p>
             </section>
 
-            <Box sx={{ position: 'fixed', bottom: 0, left: 0, right: 0}} elevation={3}>
+            <Box sx={{ position: 'fixed', bottom: 0, left: 0, right: 0}} elevation={3} marginBottom={5}>
                 <BottomNavigation showLabels className='transparent'>
                     <Footer />
                 </BottomNavigation>
