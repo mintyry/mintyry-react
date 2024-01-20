@@ -25,9 +25,6 @@ const theme = createTheme({
   palette: {
     primary: {
       main: '#b9ffda',
-      // light: will be calculated from palette.primary.main,
-      // dark: will be calculated from palette.primary.main,
-      // contrastText: will be calculated to contrast with palette.primary.main
     }
  
   },
@@ -48,7 +45,7 @@ export default function Footer() {
       <ThemeProvider theme={theme}>
         <ButtonGroup variant="text" aria-label="text button group" color="primary" className="links">
           <Button><p>Reach <span className="extra">out to me</span></p></Button>
-          <Button><p>Read <span className="extra">all about me</span></p></Button>
+          <Button><p>Read <span className="extra">about me</span></p></Button>
           <Button><p>Revere <span className="extra">my work</span></p></Button>
         </ButtonGroup>
       </ThemeProvider>

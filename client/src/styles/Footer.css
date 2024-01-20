@@ -1,52 +1,13 @@
-/* 
-
 .extra {
-    display: none;
+    display: inline-flex;
   
-  }
 
-  p:hover .extra {
-    display: inline-block;
-    animation: slideOut 0.5s forwards;
-  }
-
-  @keyframes slideOut {
-    0% {
-      transform: translateX(-50%);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  } */
-
-  .extra {
-    display: inline-block;
-    white-space: nowrap;
     width: 0;
-    opacity: 0;
-    transition: width 1s, opacity 1s;
+    overflow: hidden;
+    white-space:nowrap;
+    transition:width .5s linear;
   }
-  
-   p:hover .extra {
-    width: auto;
-    opacity: 1;
-    animation: slideOut 0.7s linear;
-    
-  } 
-  
-  @keyframes slideOut {
-    0% {
-      transform: translateX(-30%);
-    }
-    100% {
-      transform: translateX(0);
-    }
+  p:hover .extra {
+    width: 5rem;
   }
-  
-
-
-
-
-
-
   
