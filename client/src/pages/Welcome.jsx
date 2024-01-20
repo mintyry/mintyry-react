@@ -1,10 +1,5 @@
 import '../styles/Welcome.css';
 import { useState, useEffect } from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import Box from "@mui/material/Box";
-import BottomNavigation from "@mui/material/BottomNavigation";
-import { Outlet } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
 // First page that runs
