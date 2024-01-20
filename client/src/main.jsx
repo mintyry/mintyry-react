@@ -8,6 +8,7 @@ import Welcome from './pages/Welcome.jsx';
 // import Home from './pages/Home';
 import About from './pages/About';
 
+// set up structure of app and its pages(children)
 const router = createBrowserRouter([
   {
     path: '/',

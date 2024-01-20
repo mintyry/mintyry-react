@@ -7,26 +7,24 @@ import BottomNavigation from "@mui/material/BottomNavigation";
 import { Outlet } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
+// First page that runs
 
 function Welcome() {
     // initially setting states to false (dont show)
     const [showMessage, setMessage] = useState(false);
     const [showHome, setShowHome] = useState(false);
-
+    // declaring this variable for the useNavigate hook to redirect to other page after welcome messages run
     const navigate = useNavigate();
-
-    if (showHome) {
-        navigate('/about'); // Replace '/your-path' with the desired URL path
-        // return null; // Return null to prevent rendering any content
-    }
 
     // useEffect: renders content conditionally
     // This one will progress welcome message when app is clicked anywhere.
     useEffect(() => {
-        // when this function runs, setMessage state is changed to true, and will display corresponding message.
+
+        // when this function runs, setMessage state is changed to true, and will display horcrux msg.
         function clickWelcome() {
             setMessage(true);
         };
+
         // event listener on page; when page is clicked, runs clickWelcome()
         document.addEventListener('click', clickWelcome);
 
@@ -43,20 +41,18 @@ function Welcome() {
     }, []);//ends useEffect
 
 
-    // This useEffect is for leading to the next component (Home);
-    //showmessage is in useEffect, so locally scoped, so if useEffect doesnt run, code cant evaluate 35, 43 allows useEffect to run
+    // This useEffect is for leading to the redirection to next page (set showHome to true and will get navigated to that page)
     useEffect(() => {
-        // function changes setShowFunction state to true
-       
 
+        // function changes setShowFunction state to true
         function openHome() {
             setShowHome(true);
         };
-       
 
-        // if showMessage is truthy, it will add an event listener
+        // if horcrux message is showing, even listener runs to allow click or will eventually change showHome to true on its own.
         if (showMessage) {
             document.addEventListener('click', openHome);
+
             // open Home regardless if no click in time
             if (showHome === false) {
                 setTimeout(openHome, 12000);
@@ -66,18 +62,27 @@ function Welcome() {
                 document.removeEventListener('click', openHome);
             }
         }
+
         // this dependency ensures that this useeffect runs when showMessage's value changes
     }, [showMessage]);
 
+    // this allows to navigate to the page we want. Can't run it in a function inside useEffect, could kind of run it outside of useEffects and inside Welcome fn, but error message pops up.
+    // having it in its own useEffect allows it to work and no error messages.
+    useEffect(() => {
+        if (showHome) {
+            navigate('/about');
+        }
+    }, [showHome, navigate]);
 
-    const welcome = document.querySelectorAll('svg path');
-    for (let i = 0; i < welcome.length; i++) {
-        console.log(`letter ${i} is ${welcome[i].getTotalLength()}`);
-    }
+    // KEEPING THIS HERE FOR SVG HELP IN CASE NEED TO CHANGE
+    // const welcome = document.querySelectorAll('svg path');
+    // for (let i = 0; i < welcome.length; i++) {
+    //     console.log(`letter ${i} is ${welcome[i].getTotalLength()}`);
+    // }
 
     // if it showHome is falsy, then show the welcome message...
     //if showMessage is falsy, show Welcome, otherwise, show horcrux line
-    //if showHome is truthy, we show Home component.
+    //if showHome is truthy, we render nothing; last useEffect will navigate us to different page.
     return (
         <>
             {
@@ -124,18 +129,6 @@ function Welcome() {
                     :
                     (
                         null
-                        // got an error saying these adjacent comps need a parent wrapper, but isnt welcome div already doing that?
-                        // <>
-                        //     <Header />
-
-                        //     <Outlet />
-
-                        //     <Box sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3} marginBottom={5}>
-                        //         <BottomNavigation showLabels className='transparent'>
-                        //             <Footer />
-                        //         </BottomNavigation>
-                        //     </Box>
-                        // </>
                     )
             }
         </>
