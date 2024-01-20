@@ -1,6 +1,10 @@
 import '../styles/Welcome.css';
 import { useState, useEffect } from 'react';
-import Home from './Home';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import Box from "@mui/material/Box";
+import BottomNavigation from "@mui/material/BottomNavigation";
+import { Outlet } from 'react-router-dom';
 import { redirect } from 'react-router-dom';
 
 
@@ -66,7 +70,7 @@ function Welcome() {
     //if showMessage is falsy, show Welcome, otherwise, show horcrux line
     //if showHome is truthy, we show Home component.
     return (
-        <div id="welcome">
+        <>
             {
                 !showHome
                     ?
@@ -110,10 +114,21 @@ function Welcome() {
                     )
                     :
                     (
-                        <Home />
+                        // got an error saying these adjacent comps need a parent wrapper, but isnt welcome div already doing that?
+                        <>
+                            <Header />
+
+                            <Outlet />
+
+                            <Box sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3} marginBottom={5}>
+                                <BottomNavigation showLabels className='transparent'>
+                                    <Footer />
+                                </BottomNavigation>
+                            </Box>
+                        </>
                     )
             }
-        </div>
+        </>
     );
 }
 
