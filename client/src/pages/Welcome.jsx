@@ -5,13 +5,20 @@ import Footer from '../components/Footer';
 import Box from "@mui/material/Box";
 import BottomNavigation from "@mui/material/BottomNavigation";
 import { Outlet } from 'react-router-dom';
-import { redirect } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 function Welcome() {
     // initially setting states to false (dont show)
     const [showMessage, setMessage] = useState(false);
     const [showHome, setShowHome] = useState(false);
+
+    const navigate = useNavigate();
+
+    if (showHome) {
+        navigate('/about'); // Replace '/your-path' with the desired URL path
+        return null; // Return null to prevent rendering any content
+    }
 
     // useEffect: renders content conditionally
     // This one will progress welcome message when app is clicked anywhere.
@@ -40,10 +47,12 @@ function Welcome() {
     //showmessage is in useEffect, so locally scoped, so if useEffect doesnt run, code cant evaluate 35, 43 allows useEffect to run
     useEffect(() => {
         // function changes setShowFunction state to true
+       
 
         function openHome() {
             setShowHome(true);
         };
+       
 
         // if showMessage is truthy, it will add an event listener
         if (showMessage) {
@@ -114,18 +123,19 @@ function Welcome() {
                     )
                     :
                     (
+                        null
                         // got an error saying these adjacent comps need a parent wrapper, but isnt welcome div already doing that?
-                        <>
-                            <Header />
+                        // <>
+                        //     <Header />
 
-                            <Outlet />
+                        //     <Outlet />
 
-                            <Box sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3} marginBottom={5}>
-                                <BottomNavigation showLabels className='transparent'>
-                                    <Footer />
-                                </BottomNavigation>
-                            </Box>
-                        </>
+                        //     <Box sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3} marginBottom={5}>
+                        //         <BottomNavigation showLabels className='transparent'>
+                        //             <Footer />
+                        //         </BottomNavigation>
+                        //     </Box>
+                        // </>
                     )
             }
         </>
