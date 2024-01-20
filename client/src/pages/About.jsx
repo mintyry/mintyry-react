@@ -9,7 +9,7 @@ function About() {
     return (
         <>
             <Container>
-                <p>Hi!</p>
+                <p className="test">Hi!</p>
             </Container>
 
         </>

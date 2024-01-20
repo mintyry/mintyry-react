@@ -31,7 +31,7 @@ export default function Footer() {
           <Button><p>Reach <span className="extra">out to me</span></p></Button>
           <Button><p>&nbsp;Read <span className="extra">about me</span></p></Button>
           <Button><p>&nbsp;Revere <span className="extra">my work</span></p></Button>
-          <Button><p>Résumé <span className="extra">&nbsp;&nbsp;&nbsp;$&nbsp;$&nbsp;$</span></p></Button>
+          <Button><p>Résumé <span className="extra">&nbsp;&nbsp;Review</span></p></Button>
         </ButtonGroup>
       </ThemeProvider>
     </Box>
