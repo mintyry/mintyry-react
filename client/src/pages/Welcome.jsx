@@ -17,7 +17,7 @@ function Welcome() {
 
     if (showHome) {
         navigate('/about'); // Replace '/your-path' with the desired URL path
-        return null; // Return null to prevent rendering any content
+        // return null; // Return null to prevent rendering any content
     }
 
     // useEffect: renders content conditionally
