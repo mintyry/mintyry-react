@@ -2,7 +2,7 @@ import { Outlet, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import './styles/Home.scss';
+import './styles/Welcome.css';
 // material ui components
 import Box from "@mui/material/Box";
 import BottomNavigation from "@mui/material/BottomNavigation";
@@ -27,24 +27,27 @@ function App() {
   }, [location])
 
   return (
-    <>
+    <div className="app">
+      {/* HEADER */}
       {/* short circuit to hide header if at root path (Welcome), literally reads: no hiding header and display header component */}
       {!hideHeader && <Header />}
 
+      {/* OUTLET */}
       {/* outlet injects page here */}
-      <Container>
+      <Container className='content' style={{ paddingBottom: '3rem' }}>
         <Outlet />
       </Container>
 
+      {/* FOOTER/NAV */}
       {/* short circuit to hide header if at root path (Welcome) */}
       {!hideFooterNav &&
-        <Box sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3} marginBottom={5}>
+        <Box sx={{ position: 'sticky', bottom: 0, left: 0, right: 0 }} elevation={3} marginBottom={5}>
           <BottomNavigation showLabels className='transparent'>
             <Footer />
           </BottomNavigation>
         </Box>
       }
-    </>
+    </div>
   )
 }
 
