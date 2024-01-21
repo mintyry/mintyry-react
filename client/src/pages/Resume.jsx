@@ -8,7 +8,7 @@ function Resume() {
             <Box sx={{
                 display: "flex",
                 margin: "auto",
-                height: { xs: "100vw", md: "70vw", lg: "40vw" },
+                height: "55vh",
                 width: { xs: "55vw" }
             }}>
                 <embed
@@ -16,7 +16,7 @@ function Resume() {
                     type="application/pdf"
                     frameBorder="0"
                     scrolling="auto"
-                    height="80%%"
+                    height="100%%"
                     width="100%"
                  
                 ></embed>

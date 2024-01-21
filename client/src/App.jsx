@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import './styles/Welcome.css';
 // material ui components
+import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import BottomNavigation from "@mui/material/BottomNavigation";
 import Container from "@mui/material/Container";
@@ -27,27 +28,35 @@ function App() {
   }, [location])
 
   return (
-    <div className="app">
-      {/* HEADER */}
-      {/* short circuit to hide header if at root path (Welcome), literally reads: no hiding header and display header component */}
-      {!hideHeader && <Header />}
+    <>
+      <Grid container>
+        {/* HEADER */}
+        {/* short circuit to hide header if at root path (Welcome), literally reads: no hiding header and display header component */}
+        <Grid item pt={5}>
+          {!hideHeader && <Header />}
+        </Grid>
 
-      {/* OUTLET */}
-      {/* outlet injects page here */}
-      <Container className='content' style={{ paddingBottom: '3rem' }}>
-        <Outlet />
-      </Container>
+        {/* OUTLET */}
+        {/* outlet injects page here */}
+        <Grid item sx={{width: '100%'}} mb={5}>
+          <Container >
+            <Outlet />
+          </Container>
+        </Grid>
 
-      {/* FOOTER/NAV */}
-      {/* short circuit to hide header if at root path (Welcome) */}
-      {!hideFooterNav &&
-        <Box sx={{ position: 'sticky', bottom: 0, left: 0, right: 0 }} elevation={3} marginBottom={5}>
-          <BottomNavigation showLabels className='transparent'>
-            <Footer />
-          </BottomNavigation>
-        </Box>
-      }
-    </div>
+        <Grid item sx={{width: '100%'}}>
+          {/* FOOTER/NAV */}
+          {/* short circuit to hide header if at root path (Welcome) */}
+          {!hideFooterNav &&
+            <Box >
+              <BottomNavigation showLabels className="transparent">
+                <Footer />
+              </BottomNavigation>
+            </Box>
+          }
+        </Grid>
+      </Grid>
+    </>
   )
 }
 

@@ -69,7 +69,9 @@ body {
   position: relative;
 }
 
-
+/* * {
+  outline: 2px solid pink;
+} */
 
 /* #welcome
 {
