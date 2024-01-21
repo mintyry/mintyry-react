@@ -9,6 +9,7 @@ import Welcome from './pages/Welcome.jsx';
 import Home from './pages/Home';
 import About from './pages/About';
 import Resume from './pages/Resume';
+import Contact from './pages/Contact';
 
 // set up structure of app and its pages(children)
 const router = createBrowserRouter([
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: '/resume',
         element: <Resume />,
+      },
+      {
+        path: '/contact',
+        element: <Contact />,
       },
     ],
   },

@@ -31,16 +31,16 @@ function Ticker() {
                         <Icon sx={{ width: "3em" }} className="fa-brands fa-stripe" />
                         <Icon sx={{ width: "3em" }} className="fa-brands fa-figma iconcolor" />&nbsp;&nbsp;&nbsp;
                         {/* from devicon */}
-                        <i style={{ fontSize: "1.7rem", marginRight: "1.5em" }} class="devicon-mongodb-plain"></i>
-                        <i style={{ fontSize: "1.7rem", marginRight: "1.5em" }} class="devicon-sequelize-plain iconcolor"></i>
-                        <i style={{ fontSize: "1.7rem", marginRight: "1.5em" }} class="devicon-webpack-plain"></i>
-                        <i style={{ fontSize: "1.7rem", marginRight: "1.5em" }} class="devicon-apple-original iconcolor"></i>
-                        <i style={{ fontSize: "1.7rem", marginRight: "1.5em" }} class="devicon-jquery-plain"></i>
-                        <i style={{ fontSize: "1.7rem", marginRight: "1.5em" }} class="devicon-handlebars-plain iconcolor"></i>
-                        <i style={{ fontSize: "1.7rem", marginRight: "1.5em" }} class="devicon-bulma-plain"></i>
-                        <i style={{ fontSize: "1.7rem", marginRight: "1.5em" }} class="devicon-materialui-plain iconcolor"></i>
-                        <i style={{ fontSize: "1.7rem", marginRight: "1.5em" }} class="devicon-mysql-plain"></i>
-                        <i style={{ fontSize: "1.7rem", marginRight: "1.5em" }} class="devicon-devicon-plain iconcolor"></i>
+                        <i style={{ fontSize: "1.7rem", marginRight: "1.5em" }} className="devicon-mongodb-plain"></i>
+                        <i style={{ fontSize: "1.7rem", marginRight: "1.5em" }} className="devicon-sequelize-plain iconcolor"></i>
+                        <i style={{ fontSize: "1.7rem", marginRight: "1.5em" }} className="devicon-webpack-plain"></i>
+                        <i style={{ fontSize: "1.7rem", marginRight: "1.5em" }} className="devicon-apple-original iconcolor"></i>
+                        <i style={{ fontSize: "1.7rem", marginRight: "1.5em" }} className="devicon-jquery-plain"></i>
+                        <i style={{ fontSize: "1.7rem", marginRight: "1.5em" }} className="devicon-handlebars-plain iconcolor"></i>
+                        <i style={{ fontSize: "1.7rem", marginRight: "1.5em" }} className="devicon-bulma-plain"></i>
+                        <i style={{ fontSize: "1.7rem", marginRight: "1.5em" }} className="devicon-materialui-plain iconcolor"></i>
+                        <i style={{ fontSize: "1.7rem", marginRight: "1.5em" }} className="devicon-mysql-plain"></i>
+                        <i style={{ fontSize: "1.7rem", marginRight: "1.5em" }} className="devicon-devicon-plain iconcolor"></i>
                     </marquee>
 
                     {/* <p>Hi</p> */}
