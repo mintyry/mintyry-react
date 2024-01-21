@@ -79,6 +79,10 @@ body {
   position: relative;
 }
 
+#manual-pad-left {
+  padding-left: 1em;
+}
+
 
 
 /* #welcome

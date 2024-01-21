@@ -9,3 +9,10 @@
 .strikeout {
     text-decoration: line-through;
 }
+
+.selfport {
+    background-image: url('../assets/aboutmeart.PNG');
+    background-position: center;
+    background-size: cover;
+    border-radius: 16px;
+}

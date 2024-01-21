@@ -43,7 +43,7 @@ function App() {
 
         {/* UTILITY BELT */}
         <Grid item my={3} sx={{width: '100vw'}}>
-          <Container>
+          <Container id="manual-pad-left">
           {!hideTicker && <Ticker />}
           </Container>
         </Grid>
