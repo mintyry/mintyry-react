@@ -4,13 +4,14 @@ import ButtonGroup from '@mui/material/ButtonGroup';
 import Box from '@mui/material/Box';
 import '../styles/Footer.css';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { Link } from 'react-router-dom';
 
 const theme = createTheme({
   palette: {
     primary: {
       main: '#b9ffda',
     }
- 
+
   },
 });
 
@@ -28,10 +29,18 @@ export default function Footer() {
     >
       <ThemeProvider theme={theme}>
         <ButtonGroup variant="text" aria-label="text button group" color="primary" className="links">
-          <Button><p>Reach <span className="extra">out to me</span></p></Button>
-          <Button><p>&nbsp;Read <span className="extra">about me</span></p></Button>
-          <Button><p>&nbsp;Revere <span className="extra">my work</span></p></Button>
-          <Button><p>Résumé <span className="extra">&nbsp;&nbsp;Review</span></p></Button>
+          <Link to="/contact">
+            <Button><p>Reach <span className="extra">out to me</span></p></Button>
+          </Link>
+          <Link to="/about">
+            <Button><p>&nbsp;Read <span className="extra">about me</span></p></Button>
+          </Link>
+          <Link to="/work">
+            <Button><p>&nbsp;Revere <span className="extra">my work</span></p></Button>
+          </Link>
+          <Link to="/resume">
+            <Button><p>Résumé <span className="extra">&nbsp;&nbsp;Review</span></p></Button>
+          </Link>
         </ButtonGroup>
       </ThemeProvider>
     </Box>
