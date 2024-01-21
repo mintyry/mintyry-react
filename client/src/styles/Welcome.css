@@ -4,6 +4,10 @@
   font-family: 'Strait', Arial, Helvetica, sans-serif
 }
 
+.noTextDec {
+  text-decoration: none;
+}
+
 body {
   background: radial-gradient(#242424, #1e1e1e, #111111, #000000);
   margin: 0;

@@ -38,8 +38,9 @@ function Ticker() {
                         <i style={{ fontSize: "1.7rem", marginRight: "1.5em" }} class="devicon-jquery-plain"></i>
                         <i style={{ fontSize: "1.7rem", marginRight: "1.5em" }} class="devicon-handlebars-plain iconcolor"></i>
                         <i style={{ fontSize: "1.7rem", marginRight: "1.5em" }} class="devicon-bulma-plain"></i>
-                        <i style={{ fontSize: "1.7rem", marginRight: "1.5em" }} class="devicon-mysql-plain iconcolor"></i>
-                        <i style={{ fontSize: "1.7rem", marginRight: "1.5em" }} class="devicon-devicon-plain"></i>
+                        <i style={{ fontSize: "1.7rem", marginRight: "1.5em" }} class="devicon-materialui-plain iconcolor"></i>
+                        <i style={{ fontSize: "1.7rem", marginRight: "1.5em" }} class="devicon-mysql-plain"></i>
+                        <i style={{ fontSize: "1.7rem", marginRight: "1.5em" }} class="devicon-devicon-plain iconcolor"></i>
                     </marquee>
 
                     {/* <p>Hi</p> */}

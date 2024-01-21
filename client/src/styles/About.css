@@ -1,3 +1,11 @@
-.test {
+.whitefont {
     color: white;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.strikeout {
+    text-decoration: line-through;
 }
