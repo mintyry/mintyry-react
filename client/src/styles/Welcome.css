@@ -1,3 +1,9 @@
+* {
+  /* outline: 2px solid pink; */
+  color:#b9ffda;
+  font-family: 'Strait', Arial, Helvetica, sans-serif
+}
+
 body {
   background: radial-gradient(#242424, #1e1e1e, #111111, #000000);
   margin: 0;
@@ -69,9 +75,7 @@ body {
   position: relative;
 }
 
-/* * {
-  outline: 2px solid pink;
-} */
+
 
 /* #welcome
 {

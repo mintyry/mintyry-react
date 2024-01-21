@@ -1,6 +1,7 @@
 import { Outlet, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import Header from './components/Header';
+import Ticker from './components/Ticker';
 import Footer from './components/Footer';
 import './styles/Welcome.css';
 // material ui components
@@ -14,26 +15,37 @@ function App() {
   const location = useLocation();
   const [hideHeader, setHideHeader] = useState(false);
   const [hideFooterNav, setHideFooterNav] = useState(false);
+  const [hideTicker, setHideTicker] = useState(false);
 
   useEffect(() => {
-    // if we are on root path (welcome message), hide header and footer
+    // if we are on root path (welcome message), hide header, ticker, and footer
     if (location.pathname === "/") {
       setHideHeader(true);
       setHideFooterNav(true);
+      setHideTicker(true);
     } else {
       setHideHeader(false);
       setHideFooterNav(false);
+      setHideTicker(false);
     }
     // runs when url path changes
   }, [location])
 
   return (
     <>
+    {!hideHeader && <Header />}
       <Grid container>
         {/* HEADER */}
         {/* short circuit to hide header if at root path (Welcome), literally reads: no hiding header and display header component */}
-        <Grid item pt={5}>
+        {/* <Grid item pt={5}>
           {!hideHeader && <Header />}
+        </Grid> */}
+
+        {/* UTILITY BELT */}
+        <Grid item my={3} sx={{width: '100%'}}>
+          <Container>
+          {!hideTicker && <Ticker />}
+          </Container>
         </Grid>
 
         {/* OUTLET */}
@@ -48,7 +60,7 @@ function App() {
           {/* FOOTER/NAV */}
           {/* short circuit to hide header if at root path (Welcome) */}
           {!hideFooterNav &&
-            <Box >
+            <Box mb={5}>
               <BottomNavigation showLabels className="transparent">
                 <Footer />
               </BottomNavigation>
