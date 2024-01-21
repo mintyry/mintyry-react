@@ -29,16 +29,16 @@ export default function Footer() {
     >
       <ThemeProvider theme={theme}>
         <ButtonGroup variant="text" aria-label="text button group" color="primary" className="links">
-          <Link to="/contact">
+          <Link to="/contact" className="noTextDec">
             <Button><p>Reach <span className="extra">out to me</span></p></Button>
           </Link>
-          <Link to="/about">
+          <Link to="/about" className="noTextDec">
             <Button><p>&nbsp;Read <span className="extra">about me</span></p></Button>
           </Link>
-          <Link to="/work">
+          <Link to="/work" className="noTextDec">
             <Button><p>&nbsp;Revere <span className="extra">my work</span></p></Button>
           </Link>
-          <Link to="/resume">
+          <Link to="/resume" className="noTextDec">
             <Button><p>Résumé <span className="extra">&nbsp;&nbsp;Review</span></p></Button>
           </Link>
         </ButtonGroup>
