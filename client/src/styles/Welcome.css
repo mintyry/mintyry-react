@@ -24,6 +24,10 @@ html, body {
   margin: 0; height: 100%; overflow: hidden
 }
 
+#error-page {
+  color: rgb(232, 137, 153);
+}
+
 /* #root {
   height: 100vh;
 } */

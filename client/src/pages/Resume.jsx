@@ -1,7 +1,6 @@
 import '../styles/About.css';
 import resume from '../assets/RyanEclarin_resume24.pdf';
 import Box from "@mui/material/Box";
-import { Link } from 'react-router-dom';
 
 function Resume() {
     return (
