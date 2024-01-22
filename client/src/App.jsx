@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Ticker from './components/Ticker';
 import Footer from './components/Footer';
+import Welcome from './pages/Welcome';
 import './styles/Welcome.css';
 // material ui components
 import Grid from "@mui/material/Grid";
@@ -13,63 +14,59 @@ import Container from "@mui/material/Container";
 function App() {
   // using location to read what path/page we are on; states are for hiding header and footer
   const location = useLocation();
-  const [hideHeader, setHideHeader] = useState(false);
-  const [hideFooterNav, setHideFooterNav] = useState(false);
-  const [hideTicker, setHideTicker] = useState(false);
+  const [showPortfolio, setShowPortfolio] = useState(false);
 
   useEffect(() => {
-    // if we are on root path (welcome message), hide header, ticker, and footer
     if (location.pathname === "/") {
-      setHideHeader(true);
-      setHideFooterNav(true);
-      setHideTicker(true);
+      setShowPortfolio(false)
     } else {
-      setHideHeader(false);
-      setHideFooterNav(false);
-      setHideTicker(false);
+      setShowPortfolio(true)
     }
     // runs when url path changes
   }, [location])
 
+  // if location is / only render <Welcome />
   return (
     <>
-      {/* HEADER */}
-      {/* short circuit to hide header if at root path (Welcome), literally reads: no hiding header and display header component */}
-      {!hideHeader && <Header />}
-      <Grid container>
-        {/* <Grid item pt={5}>
-          {!hideHeader && <Header />}
-        </Grid> */}
+      {
+        !showPortfolio ?
+          <Welcome />
+          :
+          <>
+            {/* HEADER  */}
+            <Header />
+            <Grid container>
 
-        {/* UTILITY BELT */}
-        <Grid item my={3} sx={{ width: '100vw', display: hideTicker ? 'none' : 'block' }}>
-          <Container id="manual-pad-left">
-            <Ticker />
-          </Container>
-        </Grid>
 
-        {/* OUTLET */}
-        {/* outlet injects page here */}
-        <Grid item sx={{ width: '100%' }} mb={5}>
-          <Container >
-            <Outlet />
-          </Container>
-        </Grid>
+              {/* UTILITY BELT */}
+              <Grid item my={3} sx={{ width: '100vw' }}>
+                <Container id="manual-pad-left">
+                  <Ticker />
+                </Container>
+              </Grid>
 
-        <Grid item sx={{ width: '100%' }}>
-          {/* FOOTER/NAV */}
-          {/* short circuit to hide header if at root path (Welcome) */}
-          {!hideFooterNav &&
-            <Box mb={5}>
-              <BottomNavigation showLabels className="transparent">
-                <Footer />
-              </BottomNavigation>
-            </Box>
-          }
-        </Grid>
-      </Grid>
+              {/* OUTLET */}
+              <Grid item sx={{ width: '100%' }} mb={5}>
+                <Container >
+                  {/* outlet injects page here */}
+                  <Outlet />
+                </Container>
+              </Grid>
+
+              <Grid item sx={{ width: '100%' }}>
+                {/* FOOTER/NAV */}
+                <Box mb={5}>
+                  <BottomNavigation showLabels className="transparent">
+                    <Footer />
+                  </BottomNavigation>
+                </Box>
+              </Grid>
+
+            </Grid>
+          </>
+      }
     </>
   )
 }
 
-export default App
+export default App;
