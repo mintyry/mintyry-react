@@ -19,4 +19,8 @@
 
 .circle:hover {
     box-shadow: 0 0 10px rgba(216, 255, 168, 0.857);
-  }
+}
+
+.noTextDec {
+    text-decoration: none;
+}

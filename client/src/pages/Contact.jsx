@@ -74,37 +74,47 @@ function Contact() {
                 </Grid>
                 <Grid container item xs={3} bgcolor='primary' sx={{ paddingLeft: '0px !important', justifyContent: 'center', alignItems: 'center' }}>
                     <Grid item xs={12} className="flexCenter">
-                        {/* Phone */}
-                        <div className='circle'>
-                            <Icon className="fa-brands fa-linkedin-in" />
-                        </div>
-                    </Grid>
-                    <Grid item xs={12} className="flexCenter">
-                        {/* Email */}
-                        <div className='circle'>
-                            <Icon style={{ fontSize: '2em' }} className="fa-brands fa-github" />
-                        </div>
-                    </Grid>
-                    <Grid item xs={12} className="flexCenter">
                         {/* LinkedIn */}
-                        <div className='circle'>
-                            <Icon style={{ fontSize: '2em' }} className="fa-brands fa-instagram" />
-                        </div>
+                        <a className="noTextDec" href="https://www.linkedin.com/in/ryaneclarin/">
+                            <div className='circle'>
+                                <Icon className="fa-brands fa-linkedin-in" />
+                            </div>
+                        </a>
                     </Grid>
                     <Grid item xs={12} className="flexCenter">
                         {/* Github */}
-                        <div className='circle'>
-                            <Icon  className="fa-brands fa-twitter" />
-                        </div>
+                        <a className="noTextDec" href="https://github.com/mintyry">
+                            <div className='circle'>
+                                <Icon style={{ fontSize: '2em' }} className="fa-brands fa-github" />
+                            </div>
+                        </a>
                     </Grid>
                     <Grid item xs={12} className="flexCenter">
-                        {/* Insta */}
-                        <div className='circle'>
-                            <Icon baseClassName="fas" className="fa-phone-volume" />
-                        </div>
+                        {/* IG */}
+                        <a className="noTextDec" href="https://www.instagram.com/minty.ry/">
+                            <div className='circle'>
+                                <Icon style={{ fontSize: '2em' }} className="fa-brands fa-instagram" />
+                            </div>
+                        </a>
+                    </Grid>
+                    <Grid item xs={12} className="flexCenter">
+                        {/* Twitter? */}
+                        <a className="noTextDec" href="http://tinyurl.com/trkm7az9">
+                            <div className='circle'>
+                                <Icon className="fa-brands fa-twitter" />
+                            </div>
+                        </a>
+                    </Grid>
+                    <Grid item xs={12} className="flexCenter">
+                        {/* Voicemail */}
+                        <a className="noTextDec" href="tel:818-970-2838">
+                            <div className='circle'>
+                                <Icon baseClassName="fas" className="fa-phone-volume" />
+                            </div>
+                        </a>
                     </Grid>
                 </Grid>
-            </Grid>
+            </Grid >
         </>
     );
 }
