@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom';
 import { useForm, ValidationError } from '@formspree/react';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
+import Icon from '@mui/material/Icon';
+import '../styles/Contact.css';
 
 function Contact() {
 
@@ -20,9 +22,9 @@ function Contact() {
                 <Grid item xs={9} sx={{
                     background: 'linear-gradient(to bottom, rgba(120, 255, 219, 0.8), rgba(255, 255, 255, 0.4))',
                     borderRadius: '16px'
-                    }}>
+                }}>
                     <form onSubmit={handleSubmit}>
-                        <Grid container spacing={2} sx={{p:'2em'}}>
+                        <Grid container spacing={2} sx={{ p: '2em' }}>
                             <Grid item xs={12}>
                                 <TextField
                                     id="email"
@@ -61,7 +63,7 @@ function Contact() {
                                     type="submit"
                                     disabled={state.submitting}
                                     variant="contained"
-                                    sx={{backgroundColor: '#00bfa5'}}
+                                    sx={{ backgroundColor: '#00bfa5' }}
                                 >
                                     Submit
                                 </Button>
@@ -69,21 +71,36 @@ function Contact() {
                         </Grid>
                     </form>
                 </Grid>
-                <Grid item xs={3}>
-                    <Grid item xs={12}>
+                <Grid container item xs={3} bgcolor='primary' sx={{ paddingLeft: '0px !important', justifyContent:'center', alignItems:'center' }}>
+                    <Grid item xs={12} className="flexCenter">
                         {/* Phone */}
+                        <div className='circle'>
+                            <Icon baseClassName="fas" className="fa-phone-volume" />
+                        </div>
                     </Grid>
-                    <Grid item xs={12}>
+                    <Grid item xs={12} className="flexCenter">
                         {/* Email */}
+                        <div className='circle'>
+                            <Icon baseClassName="fas" className="fa-phone-volume" />
+                        </div>
                     </Grid>
-                    <Grid item xs={12}>
+                    <Grid item xs={12}  className="flexCenter">
                         {/* LinkedIn */}
+                        <div className='circle'>
+                            <Icon baseClassName="fas" className="fa-phone-volume" />
+                        </div>
                     </Grid>
-                    <Grid item xs={12}>
+                    <Grid item xs={12}  className="flexCenter">
                         {/* Github */}
+                        <div className='circle'>
+                            <Icon baseClassName="fas" className="fa-phone-volume" />
+                        </div>
                     </Grid>
-                    <Grid item xs={12}>
+                    <Grid item xs={12}  className="flexCenter">
                         {/* Insta */}
+                        <div className='circle'>
+                            <Icon baseClassName="fas" className="fa-phone-volume" />
+                        </div>
                     </Grid>
                 </Grid>
             </Grid>
