@@ -19,7 +19,7 @@ function About() {
                     <Grid item xs={12}>
                         <Box sx={{
                             display: 'flex',
-                            background: 'linear-gradient(to right, rgba(120, 255, 219, 0.4), rgba(255, 168, 229, 0.4))',
+                            background: 'linear-gradient(to right bottom, rgba(120, 255, 219, 0.4), rgba(255, 168, 229, 0.4))',
                             width: '100%',
                             // height: '55vh',
                             // opacity: '30%',

@@ -1,5 +1,6 @@
-import React from 'react';
+
 import { useForm, ValidationError } from '@formspree/react';
+import TextField from '@mui/material/TextField';
 
 function ContactForm() {
     const [state, handleSubmit] = useForm("xkndonev");
@@ -22,10 +23,19 @@ function ContactForm() {
                 field="email"
                 errors={state.errors}
             />
-            <textarea
-                id="message"
+            <TextField
+                id="filled-multiline-static"
+                label="Multiline"
+                multiline
+                rows={4}
+                defaultValue="Default Value"
+                variant="filled"
                 name="message"
             />
+            {/* <textarea
+                id="message"
+                name="message"
+            /> */}
             <ValidationError
                 prefix="Message"
                 field="message"
