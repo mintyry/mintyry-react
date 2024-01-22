@@ -9,6 +9,11 @@ import '../styles/Work.css'
 // project imgs
 import dexperience from '../assets/work/dexp.png';
 import anyyes from '../assets/work/ay.png';
+import weather from '../assets/work/wuw.png';
+import quiztime from '../assets/work/qtart.png';
+import dotblog from '../assets/work/dotblog.png';
+import firstportfolio from '../assets/work/firstport.png'
+
 
 // quilted structure of photos
 function srcset(image, size, rows = 1, cols = 1) {
@@ -43,7 +48,9 @@ export default function Work() {
                             {itemData.map((item) => (
 
                                 <ImageListItem className="projects" key={item.img} cols={item.cols || 1} rows={item.rows || 1} component="a" href={item.url}>
-
+                                    <div className="image-overlay">
+                                        <p>{item.title}</p>
+                                    </div>
                                     <img
                                         {...srcset(item.img, 121, item.rows, item.cols)}
                                         alt={item.title}
@@ -77,25 +84,29 @@ const itemData = [
         url: 'https://mintyry.github.io/DEXPERIENCE/'
     },
     {
-        img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
-        title: 'Coffee',
+        img: weather,
+        title: 'What\'s Up Weather?',
         cols: 2,
+        url: 'https://mintyry.github.io/whats-up-weather/'
     },
     {
-        img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
-        title: 'honey',
+        img: dotblog,
+        title: '[dot]Blog',
         rows: 2,
+        url: 'https://dotblog-2a215c6fdcb3.herokuapp.com'
     },
     {
-        img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
-        title: 'Camera',
+        img: quiztime,
+        title: 'Quiz Time',
         rows: 2,
+        url: 'https://mintyry.github.io/quiz-time/'
     },
 
     {
-        img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
-        title: 'Hats',
+        img: firstportfolio,
+        title: 'First Portfolio',
         cols: 2,
+        url: 'https://mintyry.github.io/Minty-Ry-Portfolio/'
     },
     {
         img: anyyes,

@@ -9,6 +9,38 @@ background-color: transparent;
     background-color: grey;
 }
 
+/* .projects{
+    filter: sepia(300%) brightness(100%) hue-rotate(90deg);
+}
+
 .projects:hover {
     box-shadow: 0 0 10px rgba(255, 83, 189, 0.807);
-}
+    filter: none;
+} */
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+  }
+  
+  .projects:hover .image-overlay {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .image-overlay p {
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+  }
