@@ -5,18 +5,17 @@ background-color: transparent;
 }
 
 .description {
-    /* display: none; */
-    background-color: grey;
+    background-color:  rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    /* padding: ; */
 }
 
-/* .projects{
-    filter: sepia(300%) brightness(100%) hue-rotate(90deg);
+.project {
+    /* width: 100%; */
+    background-color: darkseagreen;
+    height: 0.5em;
+    /* font-size: 1.3em; */
 }
-
-.projects:hover {
-    box-shadow: 0 0 10px rgba(255, 83, 189, 0.807);
-    filter: none;
-} */
 
 .image-overlay {
     position: absolute;

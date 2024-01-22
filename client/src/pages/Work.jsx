@@ -1,4 +1,4 @@
-
+import { useState, useEffect } from 'react';
 // mui comps
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
@@ -24,55 +24,6 @@ function srcset(image, size, rows = 1, cols = 1) {
     };
 }
 
-// export this
-export default function Work() {
-    // const updatedItemData = itemData.slice(0, -1);
-    if (itemData.length > 0) {
-        itemData[itemData.length - 1].cols = 4;
-    }
-
-    return (
-        // <Grid container spacing={1}>
-        <>
-            <Grid container spacing={1} mt={3}>
-                <Grid item xs={12} md={4}  >
-                    <Box className='boxPics'>
-                        <ImageList
-
-                            variant="quilted"
-                            cols={4}
-                            rowHeight={121}
-                            sx={{ borderRadius: '10px' }}
-
-                        >
-                            {itemData.map((item) => (
-
-                                <ImageListItem className="projects" key={item.img} cols={item.cols || 1} rows={item.rows || 1} component="a" href={item.url}>
-                                    <div className="image-overlay">
-                                        <p>{item.title}</p>
-                                    </div>
-                                    <img
-                                        {...srcset(item.img, 121, item.rows, item.cols)}
-                                        alt={item.title}
-                                        loading="lazy"
-                                    />
-
-                                </ImageListItem>
-
-                            ))}
-                        </ImageList>
-                    </Box>
-                </Grid>
-                <Grid item xs={12} md={8} >
-                    <Box className='description' >
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quas provident dicta, eveniet excepturi modi atque. Quia odit nihil iusto labore consectetur quisquam, suscipit, nobis, quaerat ducimus fugiat laborum hic.</p>
-                    </Box>
-
-                </Grid>
-            </Grid>
-        </>
-    );
-}
 
 // array of photos as objects
 const itemData = [
@@ -114,11 +65,74 @@ const itemData = [
         cols: 2,
         url: 'https://anyyes-com-7a95399acf53.herokuapp.com'
     },
-    // placeholder image
-
-
 
 ];
+
+
+
+
+
+// export this
+export default function Work() {
+    // const updatedItemData = itemData.slice(0, -1);
+    if (itemData.length > 0) {
+        itemData[itemData.length - 1].cols = 4;
+    }
+// set value to nothing first
+    const [showProject, setShowProject] = useState(null);
+
+    return (
+        // <Grid container spacing={1}>
+        <>
+            <Grid container spacing={2}>
+                <Grid item xs={12} md={4}  >
+                    <Box className='boxPics'>
+                        <ImageList
+
+                            variant="quilted"
+                            cols={4}
+                            rowHeight={121}
+                            sx={{ borderRadius: '10px' }}
+
+                            
+
+                        >
+                            {itemData.map((item) => (
+
+                                <ImageListItem className="projects" key={item.img} cols={item.cols || 1} rows={item.rows || 1} onClick={() => setShowProject(item)} >
+                                    <div className="image-overlay">
+                                        <p>{item.title}</p>
+                                    </div>
+                                    <img
+                                        {...srcset(item.img, 121, item.rows, item.cols)}
+                                        alt={item.title}
+                                        loading="lazy"
+                                    />
+
+                                </ImageListItem>
+
+                            ))}
+                        </ImageList>
+                    </Box>
+                </Grid>
+                <Grid item xs={12} md={8} p={1}>
+                    <Box className='description' >
+                   
+                        {showProject && (
+                            <p className="project" style={{ padding: '1em' }}>
+                              &gt;&gt;{showProject.title}
+                            </p>
+                          )}
+                  
+                    </Box>
+
+                </Grid>
+            </Grid>
+        </>
+    );
+}
+
+
 
 
 
