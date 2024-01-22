@@ -32,38 +32,44 @@ const itemData = [
         title: 'DEXPERIENCE',
         rows: 2,
         cols: 2,
-        url: 'https://mintyry.github.io/DEXPERIENCE/'
+        url: 'https://mintyry.github.io/DEXPERIENCE/',
+        text:'This is DEXPERIENCE!'
     },
     {
         img: weather,
         title: 'What\'s Up Weather?',
         cols: 2,
-        url: 'https://mintyry.github.io/whats-up-weather/'
+        url: 'https://mintyry.github.io/whats-up-weather/',
+        text:'This is What\'s Up Weather!!'
     },
     {
         img: dotblog,
         title: '[dot]Blog',
         rows: 2,
-        url: 'https://dotblog-2a215c6fdcb3.herokuapp.com'
+        url: 'https://dotblog-2a215c6fdcb3.herokuapp.com',
+        text:'This is [dot]Blog]'
     },
     {
         img: quiztime,
         title: 'Quiz Time',
         rows: 2,
-        url: 'https://mintyry.github.io/quiz-time/'
+        url: 'https://mintyry.github.io/quiz-time/',
+        text:'This is Quiz Time!'
     },
 
     {
         img: firstportfolio,
-        title: 'First Portfolio',
+        title: 'Minty.Ry Portfolio 1.0',
         cols: 2,
-        url: 'https://mintyry.github.io/Minty-Ry-Portfolio/'
+        url: 'https://mintyry.github.io/Minty-Ry-Portfolio/',
+        text:'This is my first portfolio!'
     },
     {
         img: anyyes,
         title: 'AnyYes',
         cols: 2,
-        url: 'https://anyyes-com-7a95399acf53.herokuapp.com'
+        url: 'https://anyyes-com-7a95399acf53.herokuapp.com',
+        text:'This is AnyYes!'
     },
 
 ];
@@ -122,7 +128,7 @@ export default function Work() {
                                     </p>
                                 </div>
                                 <div style={{padding:'0 1em 1em 1.7em'}}>
-                                    <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit praesentium, perspiciatis quae obcaecati exercitationem necessitatibus dolore modi. Itaque quaerat facere doloremque et enim, architecto corporis, pariatur a aut non mollitia!</p>
+                                    <p >{showProject.text}</p>
                                 </div>
                             </>
                         )}
