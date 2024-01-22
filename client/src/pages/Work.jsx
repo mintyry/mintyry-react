@@ -69,23 +69,20 @@ const itemData = [
 ];
 
 
-
-
-
 // export this
 export default function Work() {
     // const updatedItemData = itemData.slice(0, -1);
     if (itemData.length > 0) {
         itemData[itemData.length - 1].cols = 4;
     }
-// set value to nothing first
+    // set value to nothing first
     const [showProject, setShowProject] = useState(null);
 
     return (
         // <Grid container spacing={1}>
         <>
             <Grid container spacing={2}>
-                <Grid item xs={12} md={4}  >
+                <Grid item xs={12} md={4} className="quilt"  >
                     <Box className='boxPics'>
                         <ImageList
 
@@ -94,7 +91,7 @@ export default function Work() {
                             rowHeight={121}
                             sx={{ borderRadius: '10px' }}
 
-                            
+
 
                         >
                             {itemData.map((item) => (
@@ -116,15 +113,21 @@ export default function Work() {
                     </Box>
                 </Grid>
                 <Grid item xs={12} md={8} p={1}>
-                    <Box className='description' >
-                   
+                    <Grid item xs={12} className='description' >
                         {showProject && (
-                            <p className="project" style={{ padding: '1em' }}>
-                              &gt;&gt;{showProject.title}
-                            </p>
-                          )}
-                  
-                    </Box>
+                            <>
+                                <div className="project" style={{}}>
+                                    <p className="removeMargins" style={{ fontSize: '2rem' }}>
+                                        &gt;&gt;&nbsp;{showProject.title}&nbsp;&lt;&lt;
+                                    </p>
+                                </div>
+                                <div style={{padding:'0 1em 1em 1.7em'}}>
+                                    <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit praesentium, perspiciatis quae obcaecati exercitationem necessitatibus dolore modi. Itaque quaerat facere doloremque et enim, architecto corporis, pariatur a aut non mollitia!</p>
+                                </div>
+                            </>
+                        )}
+
+                    </Grid>
 
                 </Grid>
             </Grid>
