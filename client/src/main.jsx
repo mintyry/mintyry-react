@@ -10,6 +10,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
+import Work from './pages/Work';
 
 // set up structure of app and its pages(children)
 const router = createBrowserRouter([
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: '/contact',
         element: <Contact/>,
+      },
+      {
+        path: '/work',
+        element: <Work/>,
       },
     ],
   },
