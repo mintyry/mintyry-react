@@ -2,14 +2,14 @@
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import { Link } from 'react-router-dom';
+import ContactForm from "../components/ContactForm";
 
 function Contact() {
     return (
         <>
             <Grid container spacing={1}>
                 <Grid item xs={9}>
-                    {/* contact form */}
-
+                    <ContactForm />
                 </Grid>
                 <Grid item xs={3}>
                     <Grid item xs={12}>
