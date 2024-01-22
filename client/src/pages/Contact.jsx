@@ -8,6 +8,7 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Icon from '@mui/material/Icon';
 import '../styles/Contact.css';
+import "@fortawesome/fontawesome-free/css/all.css";
 
 function Contact() {
 
@@ -71,32 +72,32 @@ function Contact() {
                         </Grid>
                     </form>
                 </Grid>
-                <Grid container item xs={3} bgcolor='primary' sx={{ paddingLeft: '0px !important', justifyContent:'center', alignItems:'center' }}>
+                <Grid container item xs={3} bgcolor='primary' sx={{ paddingLeft: '0px !important', justifyContent: 'center', alignItems: 'center' }}>
                     <Grid item xs={12} className="flexCenter">
                         {/* Phone */}
                         <div className='circle'>
-                            <Icon baseClassName="fas" className="fa-phone-volume" />
+                            <Icon className="fa-brands fa-linkedin-in" />
                         </div>
                     </Grid>
                     <Grid item xs={12} className="flexCenter">
                         {/* Email */}
                         <div className='circle'>
-                            <Icon baseClassName="fas" className="fa-phone-volume" />
+                            <Icon style={{ fontSize: '2em' }} className="fa-brands fa-github" />
                         </div>
                     </Grid>
-                    <Grid item xs={12}  className="flexCenter">
+                    <Grid item xs={12} className="flexCenter">
                         {/* LinkedIn */}
                         <div className='circle'>
-                            <Icon baseClassName="fas" className="fa-phone-volume" />
+                            <Icon style={{ fontSize: '2em' }} className="fa-brands fa-instagram" />
                         </div>
                     </Grid>
-                    <Grid item xs={12}  className="flexCenter">
+                    <Grid item xs={12} className="flexCenter">
                         {/* Github */}
                         <div className='circle'>
-                            <Icon baseClassName="fas" className="fa-phone-volume" />
+                            <Icon  className="fa-brands fa-twitter" />
                         </div>
                     </Grid>
-                    <Grid item xs={12}  className="flexCenter">
+                    <Grid item xs={12} className="flexCenter">
                         {/* Insta */}
                         <div className='circle'>
                             <Icon baseClassName="fas" className="fa-phone-volume" />
