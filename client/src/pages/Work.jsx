@@ -24,29 +24,46 @@ export default function Work() {
     // const updatedItemData = itemData.slice(0, -1);
     if (itemData.length > 0) {
         itemData[itemData.length - 1].cols = 4;
-      }
-    
+    }
+
     return (
-        <ImageList
-            sx={{ width: 500, height: 500 }}
-            variant="quilted"
-            cols={4}
-            rowHeight={121}
-        >
-            {itemData.map((item) => (
+        // <Grid container spacing={1}>
+        <>
+            <Grid container spacing={1} mt={3}>
+                <Grid item xs={12} md={4}  >
+                    <Box className='boxPics'>
+                        <ImageList
 
-                <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1} component="a" href={item.url}>
+                            variant="quilted"
+                            cols={4}
+                            rowHeight={121}
+                            sx={{ borderRadius: '10px' }}
 
-                    <img
-                        {...srcset(item.img, 121, item.rows, item.cols)}
-                        alt={item.title}
-                        loading="lazy"
-                    />
+                        >
+                            {itemData.map((item) => (
 
-                </ImageListItem>
+                                <ImageListItem className="projects" key={item.img} cols={item.cols || 1} rows={item.rows || 1} component="a" href={item.url}>
 
-            ))}
-        </ImageList>
+                                    <img
+                                        {...srcset(item.img, 121, item.rows, item.cols)}
+                                        alt={item.title}
+                                        loading="lazy"
+                                    />
+
+                                </ImageListItem>
+
+                            ))}
+                        </ImageList>
+                    </Box>
+                </Grid>
+                <Grid item xs={12} md={8} >
+                    <Box className='description' >
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quas provident dicta, eveniet excepturi modi atque. Quia odit nihil iusto labore consectetur quisquam, suscipit, nobis, quaerat ducimus fugiat laborum hic.</p>
+                    </Box>
+
+                </Grid>
+            </Grid>
+        </>
     );
 }
 
@@ -87,9 +104,9 @@ const itemData = [
         url: 'https://anyyes-com-7a95399acf53.herokuapp.com'
     },
     // placeholder image
-  
- 
-  
+
+
+
 ];
 
 

@@ -1,5 +1,6 @@
-.pics {
-background-color: rgb(154, 81, 81);
+.boxPics {
+background-color: transparent;
+/* outline: 2px solid pink; */
 
 }
 
@@ -8,3 +9,6 @@ background-color: rgb(154, 81, 81);
     background-color: grey;
 }
 
+.projects:hover {
+    box-shadow: 0 0 10px rgba(255, 83, 189, 0.807);
+}
