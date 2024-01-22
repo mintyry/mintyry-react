@@ -1,27 +1,35 @@
-import '../styles/About.css';
-import resume from '../assets/RyanEclarin_resume24.pdf';
+
 import Box from "@mui/material/Box";
+import Grid from "@mui/material/Grid";
+import { Link } from 'react-router-dom';
 
 function Contact() {
     return (
-        <a href={resume} download>
-            <Box sx={{
-                display: "flex",
-                margin: "auto",
-                height: "55vh",
-                width: { xs: "55vw" }
-            }}>
-                <embed
-                    src={resume}
-                    type="application/pdf"
-                    frameBorder="0"
-                    scrolling="auto"
-                    height="100%%"
-                    width="100%"
-                 
-                ></embed>
-            </Box>
-        </a>
+        <>
+            <Grid container spacing={1}>
+                <Grid item xs={9}>
+                    {/* contact form */}
+
+                </Grid>
+                <Grid item xs={3}>
+                    <Grid item xs={12}>
+                        {/* Phone */}
+                    </Grid>
+                    <Grid item xs={12}>
+                        {/* Email */}
+                    </Grid>
+                    <Grid item xs={12}>
+                        {/* LinkedIn */}
+                    </Grid>
+                    <Grid item xs={12}>
+                        {/* Github */}
+                    </Grid>
+                    <Grid item xs={12}>
+                        {/* Insta */}
+                    </Grid>
+                </Grid>
+            </Grid>
+        </>
     );
 }
 
