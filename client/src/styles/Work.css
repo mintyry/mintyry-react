@@ -8,7 +8,7 @@ background-color: transparent;
     background-color:  rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     height: 100%;
-    animation: des-load 1000ms ease-in 1000ms;
+    animation: des-load 700ms ease-in 800ms;
 }
 .hidden {
   opacity: 0;

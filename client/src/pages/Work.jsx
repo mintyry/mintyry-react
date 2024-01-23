@@ -210,7 +210,7 @@ export default function Work() {
         // if the component that is clicked contains the target (pic) OR the current target is the pic, then change state
         if (event.currentTarget.contains(event.target) || event.currentTarget === event.target) {
             // delays removal of hidden class, allowing the delay of transition
-            setTimeout(revealDes, 2000);
+            setTimeout(revealDes, 1200);
             setShowDescription(true);
         }
     }
