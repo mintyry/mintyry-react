@@ -24,7 +24,7 @@ background-color: transparent;
 }
 .project {
     /* width: 100%; */
-    background: linear-gradient( to right, transparent, #f9b668, #ff67d6,  #ff67d6,  #ff67d6, #f9b668, transparent);
+    background: linear-gradient( to right, transparent, #fff4d3, #78ffdb,  #78ffdb,  #78ffdb, #fff4d3, transparent);
     /* height: 0.5em; */
     /* font-size: 2em; */
     text-align: center;

@@ -12,8 +12,11 @@ import fulldexperience from '../assets/work/fulldexperience.png';
 import anyyes from '../assets/work/ay.png';
 import weather from '../assets/work/wuw.png';
 import quiztime from '../assets/work/qtart.png';
+import fullqt from '../assets/work/fullqt.png';
 import dotblog from '../assets/work/dotblog.png';
-import firstportfolio from '../assets/work/firstport.png'
+import fullblog from '../assets/work/fulldot.png';
+import firstportfolio from '../assets/work/firstport.png';
+import fullfirst from '../assets/work/fullmintypro.png';
 
 import Icon from "@mui/material/Icon";
 import "@fortawesome/fontawesome-free/css/all.css";
@@ -45,16 +48,17 @@ const ifigma = <Icon sx={{ lineHeight: 'unset', marginRight: '0.5em' }} classNam
 // dev icons as var
 const ibulma = <i style={{ fontSize: "1.5rem", marginRight: "0.5em" }} className="devicon-bulma-plain iconcolor"></i>;
 const imongo = <i style={{ fontSize: "1.5rem", marginRight: "0.5em" }} className="devicon-mongodb-plain iconcolor"></i>;
+const imysql = <i style={{ fontSize: "1.5rem", marginRight: "0.5em" }}className="devicon-mysql-plain iconcolor"></i>;
 const isqlz = <i style={{ fontSize: "1.5rem", marginRight: "0.5em" }} className="devicon-sequelize-plain iconcolor"></i>;
 const iwpack = <i style={{ fontSize: "1.5rem", marginRight: "0.5em" }} className="devicon-webpack-plain iconcolor"></i>;
 const iapple = <i style={{ fontSize: "1.5rem", marginRight: "0.5em" }} className="devicon-apple-original iconcolor"></i>;
 const ijquery = <i style={{ fontSize: "1.5rem", marginRight: "0.5em" }} className="devicon-jquery-plain iconcolor"></i>;
 const ihbars = <i style={{ fontSize: "1.5rem", marginRight: "0.5em" }} className="devicon-handlebars-plain iconcolor"></i>;
 const imui = <i style={{ fontSize: "1.5rem", marginRight: "0.5em" }} className="devicon-materialui-plain iconcolor"></i>;
-const imysql = <i style={{ fontSize: "1.5rem", marginRight: "0.5em" }}className="devicon-mysql-plain iconcolor"></i>;
 const ivsc = <i style={{ fontSize: "1.5rem", marginRight: "0.5em" }} className="devicon-vscode-plain iconcolor"></i>;
 const ichrome = <i style={{ fontSize: "1.5rem", marginRight: "0.5em" }} className="devicon-chrome-plain iconcolor"></i>;
 const ieslint = <i style={{ fontSize: "1.5rem", marginRight: "0.5em" }} className="devicon-eslint-original iconcolor"></i>;
+const iex = <i style={{ fontSize: "1.5rem", marginRight: "0.5em" }} className="devicon-express-original iconcolor"></i>;
 const idev = <i style={{ fontSize: "1.5rem", marginRight: "0.5em" }} className="devicon-devicon-plain iconcolor"></i>;
 
 
@@ -103,14 +107,40 @@ const itemData = [
         title: '[dot]Blog',
         rows: 2,
         url: 'https://dotblog-2a215c6fdcb3.herokuapp.com',
-        text: 'This is [dot]Blog]'
+        text: 'This is [dot]Blog]',
+        fullimg: fullblog,
+        icons: [
+            icode,
+            iterminal,
+            ihtml,
+            icss,
+            ijs,
+            igithub,
+            igit,
+            inode,
+            idb,
+            imysql,
+            isqlz,
+            ihbars,
+            iex
+        ]
     },
     {
         img: quiztime,
         title: 'Quiz Time',
         rows: 2,
         url: 'https://mintyry.github.io/quiz-time/',
-        text: 'This is Quiz Time!'
+        text: 'This is Quiz Time!',
+        fullimg: fullqt,
+        icons: [
+            icode,
+            iterminal,
+            ihtml,
+            icss,
+            ijs,
+            igithub,
+            igit
+        ]
     },
 
     {
@@ -118,7 +148,16 @@ const itemData = [
         title: 'Minty.Ry Portfolio 1.0',
         cols: 2,
         url: 'https://mintyry.github.io/Minty-Ry-Portfolio/',
-        text: 'This is my first portfolio!'
+        text: 'This is my first portfolio!',
+        fullimg: fullfirst,
+        icons: [
+            icode,
+            iterminal,
+            ihtml,
+            icss,
+            igithub,
+            igit
+        ]
     },
     {
         img: anyyes,
@@ -127,6 +166,24 @@ const itemData = [
         url: 'https://anyyes-com-7a95399acf53.herokuapp.com',
         text: 'This is AnyYes!',
         fullimg: anyyes,
+        icons: [
+            icode,
+            iterminal,
+            ihtml,
+            icss,
+            ijs,
+            igithub,
+            igit,
+            inode,
+            idb,
+            istripe,
+            imysql,
+            isqlz,
+            ihbars,
+            iex,
+            ibulma,
+            ieslint
+        ]
     },
 
 ];
@@ -181,7 +238,7 @@ export default function Work() {
                             <>
                                 {/* shows app name */}
                                 <div className="project" style={{}}>
-                                    <p className="removeMargins" style={{ fontSize: '2rem' }}>
+                                    <p className="removeMargins" style={{ fontSize: '2rem', color: 'black' }}>
                                         &gt;&gt;&nbsp;{showProject.title}&nbsp;&lt;&lt;
                                     </p>
                                 </div>
