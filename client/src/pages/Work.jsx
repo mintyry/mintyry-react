@@ -277,7 +277,7 @@ export default function Work() {
                                     {/* tech stack used */}
                                     <div style={{ padding: '0 1em 0em 1em' }}>
 
-                                        <div style={{ display: 'flex', flexWrap: 'wrap' }}>Utilized Tools: &nbsp;&nbsp;&nbsp;
+                                        <div style={{ display: 'flex', flexWrap: 'wrap', marginBottom:'1em' }}>Utilized Tools: &nbsp;&nbsp;&nbsp;
                                             {
                                                 showProject.icons.map((icon, index) => (
                                                     <Fragment key={index} >
