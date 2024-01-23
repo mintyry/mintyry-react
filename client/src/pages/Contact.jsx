@@ -5,9 +5,7 @@ import { useForm, ValidationError } from '@formspree/react';
 import Grid from "@mui/material/Grid";
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import Icon from '@mui/material/Icon';
 import '../styles/Contact.css';
-import "@fortawesome/fontawesome-free/css/all.css";
 
 function Contact() {
 

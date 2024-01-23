@@ -1,4 +1,23 @@
-// .transparent {
-//     background-color: transparent !important;
-// }
-  
+.ol-a {
+outline : 1px solid pink;
+}
+
+.ol-b {
+    outline : 1px solid white;
+}
+
+.ol-c {
+    outline : 1px solid rgb(106, 225, 136);
+}
+
+.ol-d {
+    outline : 1px solid rgb(26, 157, 162);
+}
+
+#loc {
+    color: rgba(165, 141, 141, .7);
+}
+
+#logo {
+    width: 100%;
+}
