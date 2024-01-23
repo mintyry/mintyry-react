@@ -10,7 +10,7 @@ function Ticker() {
             <Grid container >
                 {/* utility belt buckle */}
                 <Grid item xs={3} sx={{ display: "inline-flex", justifyContent: "flex-end", background: "linear-gradient(to right bottom, #78ffdb, #ffa8e5)", borderBottomLeftRadius: "16px" }} >
-                    <p style={{ fontSize: "1.2em", backgroundColor: "black", paddingRight: "1em", paddingLeft: "1em" }}>UTILITY BELT:</p>
+                    <p style={{ fontSize: "1.2em", backgroundColor: "black", paddingRight: "1em", paddingLeft: "1em", paddingTop: "0.2em" }}>UTILITY BELT:</p>
                 </Grid>
                 {/* scrolling belt */}
                 <Grid item xs={9} sx={{ display: "flex", alignItems: "center", width: "100vw" }}>
