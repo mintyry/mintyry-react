@@ -1,12 +1,13 @@
+// style based text
 #loc {
   color: rgba(165, 141, 141, .7);
 }
-
+// give full width of container
 #logo {
   width: 100%;
 }
 
-
+// floating animation for github link
 .floatlink {
   animation: floatgh 5000ms infinite;
 }
@@ -25,6 +26,7 @@
   }
 }
 
+// floating anim for linkedin
 .floatlink2 {
   animation: floatli 3000ms infinite;
 }
@@ -43,6 +45,7 @@
   }
 }
 
+// animate border for avatar
 .logoanimation {
 
   border-radius: 50%;
