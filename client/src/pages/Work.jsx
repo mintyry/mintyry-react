@@ -43,7 +43,7 @@ const iboot = <Icon sx={{ lineHeight: 'unset', marginRight: '0.5em' }} className
 const inode = <Icon sx={{ lineHeight: 'unset', marginRight: '0.5em' }} className="fa-brands fa-node-js iconcolor" />;
 const idb = <Icon sx={{ lineHeight: 'unset', marginRight: '0.5em' }} className="fa-solid fa-database iconcolor" />;
 const ireact = <Icon sx={{ lineHeight: 'unset', marginRight: '0.5em' }} className="fa-brands fa-react iconcolor" />;
-const istripe = <Icon sx={{ lineHeight: 'unset', marginRight: '0.5em' }} className="fa-brands fa-stripe iconcolor" />;
+const istripe = <Icon sx={{ width: '1.3em', lineHeight: 'unset', marginRight: '0.5em' }} className="fa-brands fa-stripe iconcolor" />;
 const ifigma = <Icon sx={{ lineHeight: 'unset', marginRight: '0.5em' }} className="fa-brands fa-figma iconcolor" />;
 // dev icons as var
 const ibulma = <i style={{ fontSize: "1.5rem", marginRight: "0.5em" }} className="devicon-bulma-plain iconcolor"></i>;
@@ -164,7 +164,7 @@ const itemData = [
         title: 'AnyYes',
         cols: 2,
         url: 'https://anyyes-com-7a95399acf53.herokuapp.com',
-        text: 'This is AnyYes!',
+        text: 'AnyYes is a Customer-to-Customer (C2C) retro-gaming e-commerce application -- the OfferUp app the retro-gaming community has been lacking. In this application, users can buy and sell their own retro video games. AnyYes utilizes back-end databases via MYSQL and Sequelize to store product and user information. All of that data is entered into the database via, what I found to be, creative solutions in form handling. Stripe is used to process payments, and multer allows for image uploads. The user\'s cart persists via local storage. Although I had felt much more confident in writing pure CSS by myself, in building this app, I came to the embrace how a CSS framework can really expedite the whole process. Bulma CSS and Splidejs were used to style AnyYes in cohabitation with Handelbars.',
         fullimg: anyyes,
         icons: [
             icode,
