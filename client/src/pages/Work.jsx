@@ -219,6 +219,11 @@ export default function Work() {
     return (
         <>
             {/* image quilt */}
+            <Grid container >
+                <Grid item>
+                    <h1 style={{fontFamily: 'Josefin Sans, Arial, Helvetica, sans-serif', fontWeight: '100'}}>PROJECTS &gt;&gt; </h1>
+                </Grid>
+            </Grid>
             <Grid container spacing={2}>
                 {/* for sizing on md screens, if we are showing desc, take up 4/12. If not, take up full width of 12 */}
                 <Grid item xs={12} md={showDescription ? 4 : 12} className="quilt"  >
@@ -272,7 +277,7 @@ export default function Work() {
                                     {/* holds app pic and deszcription */}
                                     <Grid container sx={{ marginBottom: '2rem', display: 'flex', alignItems: 'center' }}>
                                         {/* text */}
-                                        <Grid item xs={12} sm={6} style={{ padding: '0 1em 0em 1em' }}>
+                                        <Grid item xs={12} sm={6} style={{ padding: '0 1em 0em 1em', lineHeight:'1.5' }}>
                                             <p >{showProject.text}</p>
                                         </Grid>
                                         {/* pic */}

@@ -1,27 +1,12 @@
 * {
   /* outline: 2px solid pink; */
   color:#b9ffda;
-  font-family: 'Strait', Arial, Helvetica, sans-serif
+  font-family: 'Josefin Sans', Arial, Helvetica, sans-serif
 }
 
 .noTextDec {
   text-decoration: none;
 }
-
-
-/* .title {
-  width: 100%;
-  font-size: 6.3rem;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  font-family: impact;
-  background: -webkit-linear-gradient(rgba(120, 255, 219, 0.8), rgb(255, 255, 255, 0.4));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: absolute;
-  z-index: -1;
-} */
 
 body {
   background: radial-gradient(#242424, #1e1e1e, #111111, #000000);
@@ -97,32 +82,6 @@ body {
 #manual-pad-left {
   padding-left: 1em;
 }
-
-
-
-/* #welcome
-{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: transparent;
-  border-radius: 3px;
-}
-.welcome svg{
-  text-align:center;
-
-} */
-
-
-
-
-
 
 /* so svg doesn't break page on smaller dimensions */
 svg {
@@ -310,17 +269,6 @@ svg {
     stroke-dashoffset: 0;
   }
 }
-
-/* letter 0 is 154.53529357910156
-Welcome.jsx:47 letter 1 is 77.61138153076172
-Welcome.jsx:47 letter 2 is 59.53776550292969
-Welcome.jsx:47 letter 3 is 58.59319305419922
-Welcome.jsx:47 letter 4 is 50.501827239990234
-Welcome.jsx:47 letter 5 is 122.5776138305664
-Welcome.jsx:47 letter 6 is 70.73726654052734
-Welcome.jsx:47 letter 7 is 0.7035197019577026
-Welcome.jsx:47 letter 8 is 5.390911102294922
-Welcome.jsx:47 letter 9 is 0.7016089558601379 */
 
 /* second message */
 #two-t {
@@ -611,119 +559,3 @@ Welcome.jsx:47 letter 9 is 0.7016089558601379 */
     stroke-dashoffset: 0;
   }
 }
-
-/* letter 0 is 53.74624252319336
-Welcome.jsx:47 letter 1 is 54.0112419128418
-Welcome.jsx:47 letter 2 is 58.480628967285156
-Welcome.jsx:47 letter 3 is 126.18976593017578
-Welcome.jsx:47 letter 4 is 22.272682189941406
-Welcome.jsx:47 letter 5 is 61.164955139160156
-Welcome.jsx:47 letter 6 is 104.31822204589844
-Welcome.jsx:47 letter 7 is 53.20269012451172
-Welcome.jsx:47 letter 8 is 50.6392936706543
-Welcome.jsx:47 letter 9 is 54.06721496582031
-Welcome.jsx:47 letter 10 is 52.705528259277344
-Welcome.jsx:47 letter 11 is 76.96058654785156
-Welcome.jsx:47 letter 12 is 41.01964569091797
-Welcome.jsx:47 letter 13 is 41.873199462890625
-Welcome.jsx:47 letter 14 is 3.4212093353271484
-Welcome.jsx:47 letter 15 is 8.134641647338867
-Welcome.jsx:47 letter 16 is 1.8288180828094482 */
-
-
-
-
-
-
-/* --SMOKE DISSOLVE-- */
-/* body {
-  background: black;
-  overflow: hidden;
-  font: 5vw/100vh "Finger Paint";
-  text-align: center;
-  color: transparent;
-  backface-visibility: hidden;
-} */
-
-/* path {
-  display: inline-block;
-  text-shadow: 0 0 0 whitesmoke;
-  animation: smoky 5s 3s both;
-}
-
-path:nth-child(even){
-  animation-name: smoky-mirror;
-}
-
-@keyframes smoky {
-  60% {
-    text-shadow: 0 0 40px whitesmoke;
-  }
-  to {
-    transform:
-      translate3d(15rem,-8rem,0)
-      rotate(-40deg)
-      skewX(70deg)
-      scale(1.5);
-    text-shadow: 0 0 20px whitesmoke;
-    opacity: 0;
-  }
-}
-
-@keyframes smoky-mirror {
-  60% {
-    text-shadow: 0 0 40px whitesmoke; }
-  to {
-    transform:
-      translate3d(18rem,-8rem,0)
-      rotate(-40deg) 
-      skewX(-70deg)
-      scale(2);
-     text-shadow: 0 0 20px whitesmoke;
-    opacity: 0;
-  }
-}
-
-path:nth-of-type(1) {
-  animation-delay: 3.1s;
-}
-
-path:nth-of-type(2) {
-  animation-delay: 3.2s;
-}
-
-path:nth-of-type(3) {
-  animation-delay: 3.3s;
-}
-
-path:nth-of-type(4) {
-  animation-delay: 3.4s;
-}
-
-path:nth-of-type(5) {
-  animation-delay: 3.5s;
-}
-
-path:nth-of-type(6) {
-  animation-delay: 3.6s;
-}
-
-path:nth-of-type(7) {
-  animation-delay: 3.7s;
-}
-
-path:nth-of-type(8) {
-  animation-delay: 3.8s;
-}
-
-path:nth-of-type(9) {
-  animation-delay: 3.9s;
-}
-
-path:nth-of-type(10) {
-  animation-delay: 4s;
-}
-
-path:nth-of-type(11) {
-  animation-delay: 4.1s;
-} */
