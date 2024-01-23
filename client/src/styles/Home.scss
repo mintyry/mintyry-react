@@ -1,17 +1,17 @@
 .ol-a {
-outline : 1px solid pink;
+    outline: 1px solid pink;
 }
 
 .ol-b {
-    outline : 1px solid white;
+    outline: 1px solid white;
 }
 
 .ol-c {
-    outline : 1px solid rgb(106, 225, 136);
+    outline: 1px solid rgb(106, 225, 136);
 }
 
 .ol-d {
-    outline : 1px solid rgb(26, 157, 162);
+    outline: 1px solid rgb(26, 157, 162);
 }
 
 #loc {
@@ -21,3 +21,23 @@ outline : 1px solid pink;
 #logo {
     width: 100%;
 }
+
+
+
+.floatlink {
+    animation: floatgh 5000ms infinite;
+  }
+  
+  @keyframes floatgh {
+    0% {
+      transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(25%);
+    }
+
+    100% {
+      transform: translateY(0%);
+    }
+  }

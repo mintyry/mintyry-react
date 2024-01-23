@@ -14,8 +14,8 @@ function Home() {
         <>
             <Grid container spacing={1}>
                 {/* github link */}
-                <Grid item id="ghlink" className='ol-a float' xs={4} sx={{ display: 'flex', justifyContent: 'center' }}>
-                    <a className="noTextDec" href="https://github.com/mintyry">
+                <Grid item id="ghlink" className='floatlink ' xs={4} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    <a className="noTextDec floatgh" href="https://github.com/mintyry">
                         <div className='circle'>
                             <Icon style={{ fontSize: '2em' }} className="fa-brands fa-github" />
                         </div>
@@ -26,7 +26,7 @@ function Home() {
                     <img id="logo" src={logo} />
                 </Grid>
                 {/* linked in */}
-                <Grid item id="inlink" className='ol-c float' xs={4} sx={{ display: 'flex', justifyContent: 'center' }}>
+                <Grid item id="inlink" className='floatlink ' xs={4} sx={{ display: 'flex', justifyContent: 'center' }}>
                     <a className="noTextDec" href="https://www.linkedin.com/in/ryaneclarin/">
                         <div className='circle'>
                             <Icon className="fa-brands fa-linkedin-in" />
