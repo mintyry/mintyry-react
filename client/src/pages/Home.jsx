@@ -1,6 +1,6 @@
 // mui
 import Grid from '@mui/material/Grid';
-import '../styles/Home.scss';
+import '../styles/Home.css';
 import Icon from '@mui/material/Icon';
 import "@fortawesome/fontawesome-free/css/all.css";
 // avatar
@@ -32,7 +32,7 @@ function Home() {
                     </a>
                 </Grid>
                 {/* based */}
-                <Grid item className='ol-d' xs={12} ml={30}>
+                <Grid item  xs={12} ml={25} mt={5}>
                     <p id="loc">Based: Los Angeles, CA</p>
                 </Grid>
             </Grid>

@@ -1,13 +1,14 @@
-// style based text
+/* style based text */
 #loc {
   color: rgba(165, 141, 141, .7);
+
 }
-// give full width of container
+/* give full width of container */
 #logo {
   width: 100%;
 }
 
-// floating animation for github link
+/* floating animation for github link */
 .floatlink {
   animation: floatgh 5000ms infinite;
 }
@@ -18,7 +19,7 @@
   }
 
   50% {
-    transform: translateY(25%);
+    transform: translateY(50%);
   }
 
   100% {
@@ -26,26 +27,26 @@
   }
 }
 
-// floating anim for linkedin
+/* floating anim for linkedin */
 .floatlink2 {
   animation: floatli 3000ms infinite;
 }
 
 @keyframes floatli {
   0% {
-    transform: translateY(50%);
+    transform: translateY(75%);
   }
 
   50% {
-    transform: translateY(25%);
+    transform: translateY(0%);
   }
 
   100% {
-    transform: translateY(50%);
+    transform: translateY(75%);
   }
 }
 
-// animate border for avatar
+/* animate border for avatar */
 .logoanimation {
 
   border-radius: 50%;
