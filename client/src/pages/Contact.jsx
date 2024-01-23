@@ -10,8 +10,8 @@ import Icon from '@mui/material/Icon';
 import "@fortawesome/fontawesome-free/css/all.css";
 
 function Contact() {
-
     const [state, handleSubmit] = useForm("myyrkwyy");
+    // when email submitted, still render links, otherwise they all go away
     if (state.succeeded) {
         return (
             <Grid container spacing={1}>
@@ -65,8 +65,10 @@ function Contact() {
         )
     }
 
+    // de-facto page pre-contact form submission
     return (
         <>
+            {/* left side form, right side links to other platforms */}
             <Grid container spacing={1}>
                 <Grid item xs={9} sx={{
                     background: 'linear-gradient(to bottom, rgba(120, 255, 219, 0.8), rgba(255, 255, 255, 0.4))',
@@ -120,6 +122,8 @@ function Contact() {
                         </Grid>
                     </form>
                 </Grid>
+
+                {/* links to other platforms */}
                 <Grid container item xs={3} bgcolor='primary' sx={{ paddingLeft: '0px !important', justifyContent: 'center', alignItems: 'center' }}>
                     <Grid item xs={12} className="flexCenter">
                         {/* LinkedIn */}
