@@ -164,7 +164,7 @@ const itemData = [
         title: 'AnyYes',
         cols: 2,
         url: 'https://anyyes-com-7a95399acf53.herokuapp.com',
-        text: 'AnyYes is a Customer-to-Customer (C2C) retro-gaming e-commerce application -- the OfferUp app the retro-gaming community has been lacking. In this application, users can buy and sell their own retro video games. AnyYes utilizes back-end databases via MYSQL and Sequelize to store product and user information. All of that data is encrypted into the database via, what I found to be, creative solutions in form handling. Stripe is used to process payments, and multer allows for image uploads. The user\'s cart persists via local storage. Although I had felt much more confident in writing pure CSS by myself, in building this app, I came to the embrace how a CSS framework can really expedite the whole process. Bulma CSS and Splidejs were used to style AnyYes in cohabitation with Handelbars.',
+        text: 'AnyYes is a Customer-to-Customer (C2C) retro-gaming e-commerce application -- the OfferUp app the retro-gaming community has been lacking. In this application, users can buy and sell their own retro video games. AnyYes utilizes back-end databases via MYSQL and Sequelize to store product and user information. All of that data is encrypted into the database via, what I found to be, creative solutions in form handling. Stripe is used to process payments, and multer allows for image uploads. The user\'s cart persists via local storage. Although I had felt much more confident in writing pure CSS by myself, in building this app, I came to the embrace how a CSS framework can really expedite the whole process. Bulma CSS and Splidejs were used to style AnyYes in cohabitation with Handlebars.',
         fullimg: anyyes,
         icons: [
             icode,
@@ -199,11 +199,20 @@ export default function Work() {
     const [showProject, setShowProject] = useState(null);
     //useState to show desceription container
     const [showDescription, setShowDescription] = useState(false);
+    // removes the hidden class
+    function revealDes() {
+        const hiddenDesc = document.querySelector('.hidden');
+        hiddenDesc.classList.remove('hidden');
+    }
+
     // click function to change state to true
     const clickPic = (event) => {
         // if the component that is clicked contains the target (pic) OR the current target is the pic, then change state
-        if (event.currentTarget.contains(event.target) || event.currentTarget === event.target)
+        if (event.currentTarget.contains(event.target) || event.currentTarget === event.target) {
+            // delays removal of hidden class, allowing the delay of transition
+            setTimeout(revealDes, 2000);
             setShowDescription(true);
+        }
     }
 
 
@@ -245,7 +254,7 @@ export default function Work() {
                 {/* short circuit, if showDesc is true, read the rest of the code (display it), if not, do not run rest of code/display */}
                 {showDescription && (
                     <Grid item xs={12} md={8}>
-                        <Grid item xs={12} className='description' >
+                        <Grid item xs={12} id='description' className='hidden' >
                             {showProject && (
                                 <>
                                     {/* shows app name */}
@@ -277,7 +286,7 @@ export default function Work() {
                                     {/* tech stack used */}
                                     <div style={{ padding: '0 1em 0em 1em' }}>
 
-                                        <div style={{ display: 'flex', flexWrap: 'wrap', marginBottom:'1em' }}>Utilized Tools: &nbsp;&nbsp;&nbsp;
+                                        <div style={{ display: 'flex', flexWrap: 'wrap', marginBottom: '1em' }}>Utilized Tools: &nbsp;&nbsp;&nbsp;
                                             {
                                                 showProject.icons.map((icon, index) => (
                                                     <Fragment key={index} >
@@ -298,39 +307,4 @@ export default function Work() {
             </Grid>
         </>
     );
-}
-
-
-
-
-
-
-// function Work() {
-//     return (
-
-//         <Grid container spacing={1}>
-//             <Grid item xs={12} md={4}  >
-//                 <Box p={2} className='pics'>
-
-
-//                     <p>
-//                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit consequatur expedita officiis. Sit neque ducimus omnis error harum, beatae reiciendis quo consequuntur aliquam unde ab nemo quis sequi, dolor facilis.
-//                     </p>
-
-
-
-//                 </Box>
-//             </Grid>
-//             <Grid item xs={12} md={8} >
-//                 <Box p={2} className='description' >
-//                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quas provident dicta, eveniet excepturi modi atque. Quia odit nihil iusto labore consectetur quisquam, suscipit, nobis, quaerat ducimus fugiat laborum hic.</p>
-//                 </Box>
-
-//             </Grid>
-
-//         </Grid>
-
-//     );
-// };
-
-// export default Work;
+};
