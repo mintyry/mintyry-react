@@ -31,7 +31,7 @@ function srcset(image, size, rows = 1, cols = 1) {
     };
 }
 // icons as variables
-const ifa = <Icon sx={{ lineHeight: 'unset', marginRight: '0.5em' }}  className="fa-solid fa-font-awesome iconcolor" />
+const ifa = <Icon sx={{ lineHeight: 'unset', marginRight: '0.5em' }} className="fa-solid fa-font-awesome iconcolor" />
 const icode = <Icon sx={{ lineHeight: 'unset', marginRight: '0.5em' }} className="fa-regular fa-file-code iconcolor" />;
 const iterminal = <Icon sx={{ lineHeight: 'unset', marginRight: '0.5em' }} className="fa-regular fa-solid fa-terminal iconcolor" />;
 const ihtml = <Icon sx={{ lineHeight: 'unset', marginRight: '0.5em' }} className="fa-brands fa-html5 iconcolor" />;
@@ -48,7 +48,7 @@ const ifigma = <Icon sx={{ lineHeight: 'unset', marginRight: '0.5em' }} classNam
 // dev icons as var
 const ibulma = <i style={{ fontSize: "1.5rem", marginRight: "0.5em" }} className="devicon-bulma-plain iconcolor"></i>;
 const imongo = <i style={{ fontSize: "1.5rem", marginRight: "0.5em" }} className="devicon-mongodb-plain iconcolor"></i>;
-const imysql = <i style={{ fontSize: "1.5rem", marginRight: "0.5em" }}className="devicon-mysql-plain iconcolor"></i>;
+const imysql = <i style={{ fontSize: "1.5rem", marginRight: "0.5em" }} className="devicon-mysql-plain iconcolor"></i>;
 const isqlz = <i style={{ fontSize: "1.5rem", marginRight: "0.5em" }} className="devicon-sequelize-plain iconcolor"></i>;
 const iwpack = <i style={{ fontSize: "1.5rem", marginRight: "0.5em" }} className="devicon-webpack-plain iconcolor"></i>;
 const iapple = <i style={{ fontSize: "1.5rem", marginRight: "0.5em" }} className="devicon-apple-original iconcolor"></i>;
@@ -195,14 +195,24 @@ export default function Work() {
     if (itemData.length > 0) {
         itemData[itemData.length - 1].cols = 4;
     }
-    // set value to nothing first
+    // set value to nothing first; shows inidividual project information
     const [showProject, setShowProject] = useState(null);
+    //useState to show desceription container
+    const [showDescription, setShowDescription] = useState(false);
+    // click function to change state to true
+    const clickPic = (event) => {
+        // if the component that is clicked contains the target (pic) OR the current target is the pic, then change state
+        if (event.currentTarget.contains(event.target) || event.currentTarget === event.target)
+            setShowDescription(true);
+    }
+
 
     return (
         <>
             {/* image quilt */}
             <Grid container spacing={2}>
-                <Grid item xs={12} md={4} className="quilt"  >
+                {/* for sizing on md screens, if we are showing desc, take up 4/12. If not, take up full width of 12 */}
+                <Grid item xs={12} md={showDescription ? 4 : 12} className="quilt"  >
                     <Box className='boxPics'>
                         <ImageList
 
@@ -210,6 +220,7 @@ export default function Work() {
                             cols={4}
                             rowHeight={121}
                             sx={{ borderRadius: '10px' }}
+                            onClick={clickPic}
                         >
                             {itemData.map((item) => (
 
@@ -231,57 +242,59 @@ export default function Work() {
                 </Grid>
 
                 {/* description div */}
-
-                <Grid item xs={12} md={8}>
-                    <Grid item xs={12} className='description' >
-                        {showProject && (
-                            <>
-                                {/* shows app name */}
-                                <div className="project" style={{}}>
-                                    <p className="removeMargins" style={{ fontSize: '2rem', color: 'black' }}>
-                                        &gt;&gt;&nbsp;{showProject.title}&nbsp;&lt;&lt;
-                                    </p>
-                                </div>
-
-                                {/* shows link to app */}
-                                <div style={{ marginLeft: '1em' }}>
-                                    <p >View App: <a style={{ color: '#ec407a' }} href={showProject.url}>{showProject.title}</a></p>
-                                </div>
-
-                                {/* holds app pic and deszcription */}
-                                <Grid container sx={{ marginBottom: '2rem', display: 'flex', alignItems: 'center' }}>
-                                    {/* text */}
-                                    <Grid item xs={6} style={{ padding: '0 1em 0em 1em' }}>
-                                        <p >{showProject.text}</p>
-                                    </Grid>
-                                    {/* pic */}
-                                    <Grid item xs={6} style={{ padding: '0 1em 0em 1em' }}>
-                                        <a href={showProject.url}>
-                                            <img className="dsPic" src={showProject.fullimg}></img>
-                                        </a>
-                                    </Grid>
-                                </Grid>
-
-                                {/* tech stack used */}
-                                <div style={{ padding: '0 1em 0em 1em' }}>
-
-                                    <div style={{ display: 'flex' }}>Utilized Tools: &nbsp;&nbsp;&nbsp;
-                                        {
-                                            showProject.icons.map((icon, index) => (
-                                                <Fragment key={index}>
-                                                    {icon}
-                                                </Fragment>
-                                            ))
-                                        }
-
-                                        {/* {showProject.icons} */}
-
+                {/* short circuit, if showDesc is true, read the rest of the code (display it), if not, do not run rest of code/display */}
+                {showDescription && (
+                    <Grid item xs={12} md={8}>
+                        <Grid item xs={12} className='description' >
+                            {showProject && (
+                                <>
+                                    {/* shows app name */}
+                                    <div className="project" style={{}}>
+                                        <p className="removeMargins" style={{ fontSize: '1.6rem', color: 'black' }}>
+                                            &gt;&gt;&nbsp;{showProject.title}&nbsp;&lt;&lt;
+                                        </p>
                                     </div>
-                                </div>
-                            </>
-                        )}
+
+                                    {/* shows link to app */}
+                                    <div style={{ marginLeft: '1em' }}>
+                                        <p >View App: <a style={{ color: '#ec407a' }} href={showProject.url}>{showProject.title}</a></p>
+                                    </div>
+
+                                    {/* holds app pic and deszcription */}
+                                    <Grid container sx={{ marginBottom: '2rem', display: 'flex', alignItems: 'center' }}>
+                                        {/* text */}
+                                        <Grid item xs={12} sm={6} style={{ padding: '0 1em 0em 1em' }}>
+                                            <p >{showProject.text}</p>
+                                        </Grid>
+                                        {/* pic */}
+                                        <Grid item xs={12} sm={6} style={{ padding: '0 1em 0em 1em' }}>
+                                            <a href={showProject.url}>
+                                                <img className="dsPic" src={showProject.fullimg}></img>
+                                            </a>
+                                        </Grid>
+                                    </Grid>
+
+                                    {/* tech stack used */}
+                                    <div style={{ padding: '0 1em 0em 1em' }}>
+
+                                        <div style={{ display: 'flex', flexWrap: 'wrap' }}>Utilized Tools: &nbsp;&nbsp;&nbsp;
+                                            {
+                                                showProject.icons.map((icon, index) => (
+                                                    <Fragment key={index} >
+                                                        {icon}
+                                                    </Fragment>
+                                                ))
+                                            }
+
+                                            {/* {showProject.icons} */}
+
+                                        </div>
+                                    </div>
+                                </>
+                            )}
+                        </Grid>
                     </Grid>
-                </Grid>
+                )}
             </Grid>
         </>
     );
