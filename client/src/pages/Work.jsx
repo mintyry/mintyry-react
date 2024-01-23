@@ -76,6 +76,7 @@ const itemData = [
             ijs,
             igithub,
             igit,
+            idb,
             ibulma
         ]
     },
@@ -84,7 +85,18 @@ const itemData = [
         title: 'What\'s Up Weather?',
         cols: 2,
         url: 'https://mintyry.github.io/whats-up-weather/',
-        text: 'This is What\'s Up Weather!!'
+        text: 'This is What\'s Up Weather!!',
+        fullimg: weather,
+        icons: [
+            icode,
+            iterminal,
+            ihtml,
+            icss,
+            ijs,
+            igithub,
+            igit,
+            idb,
+        ]
     },
     {
         img: dotblog,
@@ -113,7 +125,8 @@ const itemData = [
         title: 'AnyYes',
         cols: 2,
         url: 'https://anyyes-com-7a95399acf53.herokuapp.com',
-        text: 'This is AnyYes!'
+        text: 'This is AnyYes!',
+        fullimg: anyyes,
     },
 
 ];

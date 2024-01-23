@@ -43,7 +43,8 @@ function Ticker() {
                         <i style={{ fontSize: "1.7rem", marginRight: "1.5em" }} className="devicon-vscode-plain iconcolor"></i>
                         <i style={{ fontSize: "1.7rem", marginRight: "1.5em" }} className="devicon-chrome-plain"></i>
                         <i style={{ fontSize: "1.7rem", marginRight: "1.5em" }} className="devicon-eslint-original iconcolor"></i>
-                        <i style={{ fontSize: "1.7rem", marginRight: "1.5em" }} className="devicon-devicon-plain"></i>
+                        <i style={{ fontSize: "1.7rem", marginRight: "1.5em" }} className="devicon-express-original"></i>
+                        <i style={{ fontSize: "1.7rem", marginRight: "1.5em" }} className="devicon-devicon-plain iconcolor"></i>
                     </marquee>
 
                     {/* <p>Hi</p> */}
