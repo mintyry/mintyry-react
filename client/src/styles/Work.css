@@ -5,15 +5,16 @@ background-color: transparent;
 }
 
 .description {
-    background-color:  rgba(255, 255, 255, 0.2);
+    background-color:  rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     /* padding: 10px; */
     /* outline: 2px solid pink; */
+    height: 100%;
 }
-.test {
-  /* outline: 2px solid pink; */
-}
+.dsPic {
+ width: 100%;
 
+}
 .quilt ul {
   margin-block-start: 0px;
   margin-block-end: 0px;
