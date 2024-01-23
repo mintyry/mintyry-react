@@ -130,7 +130,7 @@ const itemData = [
         title: 'Quiz Time',
         rows: 2,
         url: 'https://mintyry.github.io/quiz-time/',
-        text: 'This is Quiz Time!',
+        text: 'Personal interests are a great way to find inspiration for projects, and Pokémon is one of mine. I built a quick five question quiz called Quiz Time to for Javascript practice. Utilizing setTimeout logic as well as progressing via conditional rendering helped bring this app to life. High score are saved via local storage, and wrong choices penalize the user by cutting time off the clock. Can you ace this Pokémon quiz in time?',
         fullimg: fullqt,
         icons: [
             icode,
@@ -148,7 +148,7 @@ const itemData = [
         title: 'Minty.Ry Portfolio 1.0',
         cols: 2,
         url: 'https://mintyry.github.io/Minty-Ry-Portfolio/',
-        text: 'This is my first portfolio!',
+        text: 'This was my first portfolio! I was honestly very proud of it, because after just a week and a half of learning software development, I was able to craft this up. I received much feedback from people assuming I had prior experience, but I really hadn\'t! (Unless you count Myspace, from back in 2007.) I still think it looks really nice for a basic webpage, and it is really satisfying for me to see how far I\'ve come on this dev journey. From that to what you are seeing right before you. By exploring my portfolio, I hope you enjoy this ride with me.',
         fullimg: fullfirst,
         icons: [
             icode,
