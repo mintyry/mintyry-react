@@ -25,7 +25,7 @@ function Home() {
                 {/* minty ry */}
                 <Grid item id="homepic" className='ol-b' xs={4}>
                     {/* <img id="logo" src={logo} /> */}
-                    <img id="logo" className="logoanimation" src={ry} alt="minty.ry"/>
+                        <img id="logo" className="logoanimation" src={ry} alt="minty.ry" />
                 </Grid>
                 {/* linked in */}
                 <Grid item id="inlink" className='floatlink2 ' xs={4} sx={{ display: 'flex', justifyContent: 'center' }}>

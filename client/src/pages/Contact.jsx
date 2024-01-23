@@ -6,12 +6,15 @@ import Grid from "@mui/material/Grid";
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import '../styles/Contact.css';
+import Icon from '@mui/material/Icon';
+import "@fortawesome/fontawesome-free/css/all.css";
 
 function Contact() {
 
     const [state, handleSubmit] = useForm("xkndonev");
     if (state.succeeded) {
-        return <p>Thanks for the email! I'll get back to you ASAP.</p>;
+        return <p>Thanks for the email! I'll get back to you ASAP.<br />
+        Please continue to explore my portfolio via MINTY.RY at the top or the navigation at the bottom.</p>;
     }
 
     return (

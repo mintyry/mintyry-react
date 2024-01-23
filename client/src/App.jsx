@@ -57,7 +57,7 @@ function App() {
                 {/* FOOTER/NAV */}
                 <Box mb={5}>
                   <BottomNavigation showLabels className="transparent">
-                    <Footer />
+                    <Footer id="footer" />
                   </BottomNavigation>
                 </Box>
               </Grid>
