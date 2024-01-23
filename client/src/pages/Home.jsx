@@ -1,16 +1,12 @@
-
-
-import { useState, useEffect } from 'react';
+// mui
 import Grid from '@mui/material/Grid';
 import '../styles/Home.scss';
 import Icon from '@mui/material/Icon';
 import "@fortawesome/fontawesome-free/css/all.css";
-
+// avatar
 import ry from '../assets/selfport.png';
 
-
 function Home() {
-
     return (
         <>
             <Grid container spacing={1} mt={2}>
