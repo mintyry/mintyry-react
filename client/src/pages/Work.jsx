@@ -28,11 +28,35 @@ function srcset(image, size, rows = 1, cols = 1) {
     };
 }
 // icons as variables
-const icode = <Icon sx={{ marginRight: '0.5em' }} className="fa-regular fa-file-code iconcolor" />;
-const ihtml = <Icon sx={{ lineHeight: 'unset', marginRight: '0.5em' }} className="fa-brands fa-html5 iconcolor" />;
+const ifa = <Icon sx={{ lineHeight: 'unset', marginRight: '0.5em' }}  className="fa-solid fa-font-awesome iconcolor" />
+const icode = <Icon sx={{ lineHeight: 'unset', marginRight: '0.5em' }} className="fa-regular fa-file-code iconcolor" />;
 const iterminal = <Icon sx={{ lineHeight: 'unset', marginRight: '0.5em' }} className="fa-regular fa-solid fa-terminal iconcolor" />;
+const ihtml = <Icon sx={{ lineHeight: 'unset', marginRight: '0.5em' }} className="fa-brands fa-html5 iconcolor" />;
 const icss = <Icon sx={{ lineHeight: 'unset', marginRight: '0.5em' }} className="fa-brands fa-css3-alt iconcolor" />;
 const ijs = <Icon sx={{ lineHeight: 'unset', marginRight: '0.5em' }} className="fa-brands fa-js iconcolor" />;
+const igithub = <Icon sx={{ lineHeight: 'unset', marginRight: '0.5em' }} className="fa-brands fa-square-github iconcolor" />;
+const igit = <Icon sx={{ lineHeight: 'unset', marginRight: '0.5em' }} className="fa-brands fa-git-alt iconcolor" />;
+const iboot = <Icon sx={{ lineHeight: 'unset', marginRight: '0.5em' }} className="fa-brands fa-bootstrap iconcolor" />;
+const inode = <Icon sx={{ lineHeight: 'unset', marginRight: '0.5em' }} className="fa-brands fa-node-js iconcolor" />;
+const idb = <Icon sx={{ lineHeight: 'unset', marginRight: '0.5em' }} className="fa-solid fa-database iconcolor" />;
+const ireact = <Icon sx={{ lineHeight: 'unset', marginRight: '0.5em' }} className="fa-brands fa-react iconcolor" />;
+const istripe = <Icon sx={{ lineHeight: 'unset', marginRight: '0.5em' }} className="fa-brands fa-stripe iconcolor" />;
+const ifigma = <Icon sx={{ lineHeight: 'unset', marginRight: '0.5em' }} className="fa-brands fa-figma iconcolor" />;
+// dev icons as var
+const ibulma = <i style={{ fontSize: "1.5rem", marginRight: "0.5em" }} className="devicon-bulma-plain iconcolor"></i>;
+const imongo = <i style={{ fontSize: "1.5rem", marginRight: "0.5em" }} className="devicon-mongodb-plain iconcolor"></i>;
+const isqlz = <i style={{ fontSize: "1.5rem", marginRight: "0.5em" }} className="devicon-sequelize-plain iconcolor"></i>;
+const iwpack = <i style={{ fontSize: "1.5rem", marginRight: "0.5em" }} className="devicon-webpack-plain iconcolor"></i>;
+const iapple = <i style={{ fontSize: "1.5rem", marginRight: "0.5em" }} className="devicon-apple-original iconcolor"></i>;
+const ijquery = <i style={{ fontSize: "1.5rem", marginRight: "0.5em" }} className="devicon-jquery-plain iconcolor"></i>;
+const ihbars = <i style={{ fontSize: "1.5rem", marginRight: "0.5em" }} className="devicon-handlebars-plain iconcolor"></i>;
+const imui = <i style={{ fontSize: "1.5rem", marginRight: "0.5em" }} className="devicon-materialui-plain iconcolor"></i>;
+const imysql = <i style={{ fontSize: "1.5rem", marginRight: "0.5em" }}className="devicon-mysql-plain iconcolor"></i>;
+const ivsc = <i style={{ fontSize: "1.5rem", marginRight: "0.5em" }} className="devicon-vscode-plain iconcolor"></i>;
+const ichrome = <i style={{ fontSize: "1.5rem", marginRight: "0.5em" }} className="devicon-chrome-plain iconcolor"></i>;
+const ieslint = <i style={{ fontSize: "1.5rem", marginRight: "0.5em" }} className="devicon-eslint-original iconcolor"></i>;
+const idev = <i style={{ fontSize: "1.5rem", marginRight: "0.5em" }} className="devicon-devicon-plain iconcolor"></i>;
+
 
 // array of photos as objects
 const itemData = [
@@ -50,9 +74,9 @@ const itemData = [
             ihtml,
             icss,
             ijs,
-            <Icon sx={{ lineHeight: 'unset', marginRight: '0.5em' }} className="fa-brands fa-square-github iconcolor" />,
-            <Icon sx={{ lineHeight: 'unset', marginRight: '0.5em' }} className="fa-brands fa-git-alt iconcolor" />,
-            <i style={{ fontSize: "1.5rem" }} className="devicon-bulma-plain iconcolor"></i>
+            igithub,
+            igit,
+            ibulma
         ]
     },
     {
