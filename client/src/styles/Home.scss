@@ -1,30 +1,90 @@
-
-
 #loc {
-    color: rgba(165, 141, 141, .7);
+  color: rgba(165, 141, 141, .7);
 }
 
 #logo {
-    width: 100%;
+  width: 100%;
 }
 
 
 .floatlink {
-    animation: floatgh 5000ms infinite;
-  }
-  
-  @keyframes floatgh {
-    0% {
-      transform: translateY(0%);
-    }
+  animation: floatgh 5000ms infinite;
+}
 
-    50% {
-        transform: translateY(25%);
-    }
-
-    100% {
-      transform: translateY(0%);
-    }
+@keyframes floatgh {
+  0% {
+    transform: translateY(0%);
   }
-  
-  
+
+  50% {
+    transform: translateY(25%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.floatlink2 {
+  animation: floatli 3000ms infinite;
+}
+
+@keyframes floatli {
+  0% {
+    transform: translateY(50%);
+  }
+
+  50% {
+    transform: translateY(25%);
+  }
+
+  100% {
+    transform: translateY(50%);
+  }
+}
+
+.logoanimation {
+
+  border-radius: 50%;
+
+  --s: 250px;
+  /* the size of the image */
+  --b: 8px;
+  /* the border thickness*/
+  --g: 14px;
+  /* the gap */
+  --c: #78ffdb;
+  /* the color */
+
+  outline: calc(var(--s)/2) solid rgba(248, 129, 171, 0.878);
+  outline-offset: calc(var(--s)/-2);
+
+  animation: outlineAnimation 5s infinite;
+}
+
+@keyframes outlineAnimation {
+  0% {
+    outline: calc(var(--s)/2) solid rgba(155, 96, 123, 0.6);
+    outline-offset: calc(var(--s)/-2);
+  }
+
+  25% {
+    outline: calc(var(--b) * 1.5) solid var(--c);
+    outline-offset: calc(var(--g) * 1.5);
+  }
+
+  50% {
+    outline: calc(var(--b) * 0.5) double rgba(183, 255, 205, 1);
+    outline-offset: var(--g);
+  }
+
+  75% {
+    outline: calc(var(--b) * 1.5) solid var(--c);
+    outline-offset: calc(var(--g) * 1.5);
+  }
+
+  100% {
+    outline: calc(var(--s)/2) solid rgba(155, 96, 123, 0.6);
+    outline-offset: calc(var(--s)/-2);
+  }
+}

@@ -5,14 +5,15 @@ import Grid from '@mui/material/Grid';
 import '../styles/Home.scss';
 import Icon from '@mui/material/Icon';
 import "@fortawesome/fontawesome-free/css/all.css";
-import logo from '../assets/MINTY.RY.png';
+
+import ry from '../assets/selfport.png';
 
 
 function Home() {
 
     return (
         <>
-            <Grid container spacing={1}>
+            <Grid container spacing={1} mt={2}>
                 {/* github link */}
                 <Grid item id="ghlink" className='floatlink ' xs={4} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <a className="noTextDec floatgh" href="https://github.com/mintyry">
@@ -23,10 +24,11 @@ function Home() {
                 </Grid>
                 {/* minty ry */}
                 <Grid item id="homepic" className='ol-b' xs={4}>
-                    <img id="logo" src={logo} />
+                    {/* <img id="logo" src={logo} /> */}
+                    <img id="logo" className="logoanimation" src={ry} alt="minty.ry"/>
                 </Grid>
                 {/* linked in */}
-                <Grid item id="inlink" className='floatlink ' xs={4} sx={{ display: 'flex', justifyContent: 'center' }}>
+                <Grid item id="inlink" className='floatlink2 ' xs={4} sx={{ display: 'flex', justifyContent: 'center' }}>
                     <a className="noTextDec" href="https://www.linkedin.com/in/ryaneclarin/">
                         <div className='circle'>
                             <Icon className="fa-brands fa-linkedin-in" />
