@@ -17,7 +17,12 @@ function Welcome() {
 
         // when this function runs, setMessage state is changed to true, and will display horcrux msg.
         function clickWelcome() {
-            setMessage(true);
+            const welcome = document.querySelector('#welcome');
+            welcome.classList.add('fade-out');
+
+            setTimeout(() => {
+                setMessage(true);
+            }, 1000);
         };
 
         // event listener on page; when page is clicked, runs clickWelcome()
@@ -41,7 +46,15 @@ function Welcome() {
 
         // function changes setShowFunction state to true
         function openHome() {
-            setShowHome(true);
+
+            const horcrux = document.querySelector('#horcrux');
+            horcrux.classList.add('hxfade-out');
+
+            setTimeout(() => {
+                setShowHome(true);
+            }, 1000);
+
+            
         };
 
         // if horcrux message is showing, even listener runs to allow click or will eventually change showHome to true on its own.
@@ -86,7 +99,7 @@ function Welcome() {
                     (
                         !showMessage
                             ?
-                            <svg width="470" height="165" viewBox="0 0 470 165" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg id="welcome" className='gone' width="470" height="165" viewBox="0 0 470 165" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="470" height="165" fill="transparent" />
                                 <path id="one-w" d="M94.8047 79.1686C94.8047 68.3018 99.7616 103.111 109.261 108.388C122.192 115.572 99.4549 76.9872 115.241 98.2384C120.453 105.254 143.986 118.884 141.556 100.665C140.212 90.5799 135.062 59.7796 123.102 55.7927" stroke="#A7FFCA" strokeWidth="3" strokeLinecap="round" />
                                 <path id="one-e" d="M159.396 94.5474C158.895 94.5474 165.07 93.2019 167.12 90.2414C169.677 86.5467 168.559 84.6405 165.855 81.9368C160.421 76.5031 155.217 86.2768 155.09 90.8565C154.864 99.0036 153.541 104.718 159.088 111.498C163.48 116.866 173.469 113.23 175.39 107.466" stroke="#A7FFCA" strokeWidth="3" strokeLinecap="round" />
@@ -101,7 +114,7 @@ function Welcome() {
                             </svg>
                             :
 
-                            <svg width="519" height="87" viewBox="0 0 519 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg id="horcrux" className='horcruxdone'width="519" height="87" viewBox="0 0 519 87" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path id="two-t" d="M30.55 17.489C30.55 1.70168 34.5682 49.1506 40.4315 63.8088" stroke="#A7FFCA" strokeWidth="3" strokeLinecap="round" />
                                 <path id="two-t-cross" d="M12.6396 48.9865C-3.19998 48.9865 41.747 35.9596 54.6362 26.753" stroke="#A7FFCA" strokeWidth="3" strokeLinecap="round" />
                                 <path id="two-o" d="M65.1354 39.7225C59.7932 34.9739 53.9233 69.1769 68.7037 60.5836C75.4623 56.6542 74.592 39.7225 65.753 39.7225" stroke="#A7FFCA" strokeWidth="3" strokeLinecap="round" />

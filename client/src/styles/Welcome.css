@@ -83,6 +83,31 @@ body {
   padding-left: 1em;
 }
 
+
+/* fade out anim for welcome */
+.gone {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+/* fade out anim for forcrux msg */
+.horcruxdone {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.hxfade-out {
+  opacity: 0;
+}
+
+
+
+
+
 /* so svg doesn't break page on smaller dimensions */
 svg {
   max-width: 100%;
