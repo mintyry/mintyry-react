@@ -11,10 +11,58 @@ import "@fortawesome/fontawesome-free/css/all.css";
 
 function Contact() {
 
-    const [state, handleSubmit] = useForm("xkndonev");
+    const [state, handleSubmit] = useForm("myyrkwyy");
     if (state.succeeded) {
-        return <p>Thanks for the email! I'll get back to you ASAP.<br />
-        Please continue to explore my portfolio via MINTY.RY at the top or the navigation at the bottom.</p>;
+        return (
+            <Grid container spacing={1}>
+                <Grid item xs={9}>
+                    <p>Thanks for the email! I'll get back to you ASAP.<br />
+                        Please continue to explore my portfolio via MINTY.RY at the to or the navigation at the bottom.</p>
+                </Grid>
+                <Grid container item xs={3} bgcolor='primary' sx={{ paddingLeft: '0px !important', justifyContent: 'center', alignItems: 'center' }}>
+                    <Grid item xs={12} className="flexCenter">
+                        {/* LinkedIn */}
+                        <a className="noTextDec" href="https://www.linkedin.com/in/ryaneclarin/">
+                            <div className='circle'>
+                                <Icon className="fa-brands fa-linkedin-in" />
+                            </div>
+                        </a>
+                    </Grid>
+                    <Grid item xs={12} className="flexCenter">
+                        {/* Github */}
+                        <a className="noTextDec" href="https://github.com/mintyry">
+                            <div className='circle'>
+                                <Icon style={{ fontSize: '2em' }} className="fa-brands fa-github" />
+                            </div>
+                        </a>
+                    </Grid>
+                    <Grid item xs={12} className="flexCenter">
+                        {/* IG */}
+                        <a className="noTextDec" href="https://www.instagram.com/minty.ry/">
+                            <div className='circle'>
+                                <Icon style={{ fontSize: '2em' }} className="fa-brands fa-instagram" />
+                            </div>
+                        </a>
+                    </Grid>
+                    <Grid item xs={12} className="flexCenter">
+                        {/* Twitter? */}
+                        <a className="noTextDec" href="http://tinyurl.com/trkm7az9">
+                            <div className='circle'>
+                                <Icon className="fa-brands fa-twitter" />
+                            </div>
+                        </a>
+                    </Grid>
+                    <Grid item xs={12} className="flexCenter">
+                        {/* Voicemail */}
+                        <a className="noTextDec" href="tel:818-970-2838">
+                            <div className='circle'>
+                                <Icon baseClassName="fas" className="fa-phone-volume" />
+                            </div>
+                        </a>
+                    </Grid>
+                </Grid>
+            </Grid>
+        )
     }
 
     return (
