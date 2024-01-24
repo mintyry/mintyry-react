@@ -19,7 +19,7 @@ function Contact() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                transition={{duration: 1, ease: 'easeOut'}}
+                transition={{ duration: 1, ease: 'easeOut' }}
             >
                 <Grid container spacing={1}>
                     <Grid item xs={9}>
@@ -88,7 +88,24 @@ function Contact() {
                 }}>
                     <form onSubmit={handleSubmit}>
                         <Grid container spacing={2} sx={{ p: '2em' }}>
-                            <Grid item xs={12}>
+                            <Grid item xs={6}>
+                                <TextField
+                                    id="name"
+                                    type="input"
+                                    name="name"
+                                    label="Name"
+                                    fullWidth
+                                    color="success"
+                                    className="transparent"
+                                    required
+                                />
+                                <ValidationError
+                                    prefix="Email"
+                                    field="email"
+                                    errors={state.errors}
+                                />
+                            </Grid>
+                            <Grid item xs={6}>
                                 <TextField
                                     id="email"
                                     type="email"
@@ -96,6 +113,8 @@ function Contact() {
                                     label="Email Address"
                                     fullWidth
                                     color="success"
+                                    className="transparent"
+                                    required
                                 />
                                 <ValidationError
                                     prefix="Email"
@@ -114,6 +133,8 @@ function Contact() {
                                     fullWidth
                                     name="message"
                                     color="success"
+                                    className="transparent"
+                                    required
                                 />
                                 <ValidationError
                                     prefix="Message"
