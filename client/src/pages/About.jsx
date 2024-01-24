@@ -2,15 +2,21 @@ import '../styles/About.css';
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 
 function About() {
     return (
-        <>
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{duration: 1, ease: 'easeOut'}}
+        >
             <Grid container spacing={1}>
-                <Grid item xs={12} md={3} className="selfport" sx={{display:'flex', alignItems:'flex-end'}}>
+                <Grid item xs={12} md={3} className="selfport" sx={{ display: 'flex', alignItems: 'flex-end' }}>
                     {/* <img src={selfPortrait} /> */}
-                    <p style={{backgroundColor: 'black', width: '100%', paddingLeft: '1em'}}> "INWARD" - minty.ry, 7/25/22 </p>
+                    <p style={{ backgroundColor: 'black', width: '100%', paddingLeft: '1em' }}> "INWARD" - minty.ry, 7/25/22 </p>
                 </Grid>
                 <Grid item xs={12} md={9}>
                     <Grid item xs={12}>
@@ -37,7 +43,7 @@ function About() {
                     </Grid>
                 </Grid>
             </Grid>
-        </>
+        </ motion.div>
     );
 }
 

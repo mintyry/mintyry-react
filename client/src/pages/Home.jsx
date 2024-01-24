@@ -5,10 +5,17 @@ import Icon from '@mui/material/Icon';
 import "@fortawesome/fontawesome-free/css/all.css";
 // avatar
 import ry from '../assets/selfport.png';
+import { motion } from 'framer-motion';
 
 function Home() {
     return (
-        <>
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{duration: 1, ease: 'easeOut'}}
+           
+        >
             <Grid container spacing={1} mt={2}>
                 {/* github link */}
                 <Grid item id="ghlink" className='floatlink ' xs={4} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -21,7 +28,7 @@ function Home() {
                 {/* minty ry */}
                 <Grid item id="homepic" className='ol-b' xs={4}>
                     {/* <img id="logo" src={logo} /> */}
-                        <img id="logo" className="logoanimation" src={ry} alt="minty.ry" />
+                    <img id="logo" className="logoanimation" src={ry} alt="minty.ry" />
                 </Grid>
                 {/* linked in */}
                 <Grid item id="inlink" className='floatlink2 ' xs={4} sx={{ display: 'flex', justifyContent: 'center' }}>
@@ -32,11 +39,11 @@ function Home() {
                     </a>
                 </Grid>
                 {/* based */}
-                <Grid item  xs={12} ml={25} mt={5}>
+                <Grid item xs={12} ml={25} mt={5}>
                     <p id="loc">Based: Los Angeles, CA</p>
                 </Grid>
             </Grid>
-        </>
+        </motion.div>
     );
 }
 

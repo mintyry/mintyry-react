@@ -21,6 +21,7 @@ import fullfirst from '../assets/work/fullmintypro.png';
 import Icon from "@mui/material/Icon";
 import "@fortawesome/fontawesome-free/css/all.css";
 import { Fragment } from 'react';
+import { motion } from 'framer-motion';
 
 // quilted structure of photos
 function srcset(image, size, rows = 1, cols = 1) {
@@ -217,7 +218,12 @@ export default function Work() {
 
 
     return (
-        <>
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{duration: 1, ease: 'easeOut'}}
+        >
             {/* image quilt */}
             <Grid container >
                 <Grid item>
@@ -310,6 +316,6 @@ export default function Work() {
                     </Grid>
                 )}
             </Grid>
-        </>
+        </ motion.div>
     );
 };

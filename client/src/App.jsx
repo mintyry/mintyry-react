@@ -11,6 +11,9 @@ import Box from "@mui/material/Box";
 import BottomNavigation from "@mui/material/BottomNavigation";
 import Container from "@mui/material/Container";
 
+import { AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
+
 function App() {
   // using location to read what path/page we are on; states are for hiding header and footer
   const location = useLocation();
@@ -34,32 +37,55 @@ function App() {
           :
           <>
             {/* HEADER  */}
-            <Header />
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1, ease: 'easeOut' }}
+            >
+              <Header />
+            </motion.div>
             <Grid container>
 
 
               {/* UTILITY BELT */}
-              <Grid item my={3} sx={{ width: '100vw' }}>
-                <Container id="manual-pad-left">
-                  <Ticker />
-                </Container>
-              </Grid>
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 1, ease: 'easeOut' }}
+              >
+                <Grid item my={3} sx={{ width: '100vw' }}>
+                  <Container id="manual-pad-left">
+                    <Ticker />
+                  </Container>
+                </Grid>
+              </motion.div>
 
               {/* OUTLET */}
               <Grid item sx={{ width: '100%' }} mb={5}>
                 <Container >
                   {/* outlet injects page here */}
-                  <Outlet />
+                  <AnimatePresence key={location.pathname} mode={'wait'}>
+                    <Outlet />
+                  </AnimatePresence>
                 </Container>
               </Grid>
 
               <Grid item sx={{ width: '100%' }}>
                 {/* FOOTER/NAV */}
-                <Box mb={5}>
-                  <BottomNavigation showLabels className="transparent">
-                    <Footer id="footer" />
-                  </BottomNavigation>
-                </Box>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 1, ease: 'easeOut' }}
+                >
+                  <Box mb={5}>
+                    <BottomNavigation showLabels className="transparent">
+                      <Footer id="footer" />
+                    </BottomNavigation>
+                  </Box>
+                </motion.div>
               </Grid>
 
             </Grid>
