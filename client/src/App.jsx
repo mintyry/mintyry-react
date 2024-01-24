@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Ticker from './components/Ticker';
 import Footer from './components/Footer';
+import AnimCursor from './components/AnimatedCursor';
 import Welcome from './pages/Welcome';
 import './styles/Welcome.css';
 // material ui components
@@ -13,7 +14,7 @@ import Container from "@mui/material/Container";
 // framermotion to animate page transitions & custom cursor
 import { AnimatePresence } from 'framer-motion';
 import { motion } from 'framer-motion';
-import AnimCursor from './components/AnimatedCursor';
+
 
 function App() {
   // using location to read what path/page we are on; states are for hiding header and footer
@@ -32,16 +33,17 @@ function App() {
   // if location is / only render <Welcome />
   return (
     <>
+    <AnimCursor />
       {
         !showPortfolio
           ?
           <>
-            <AnimCursor />
+            
             <Welcome />
           </>
           :
           <>
-            <AnimCursor />
+           
             {/* HEADER  */}
             <motion.div
               initial={{ opacity: 0 }}
