@@ -9,12 +9,12 @@ import { motion } from 'framer-motion';
 
 function Home() {
     return (
+        // animate page render
         <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{duration: 1, ease: 'easeOut'}}
-           
         >
             <Grid container spacing={1} mt={2}>
                 {/* github link */}

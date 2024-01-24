@@ -50,10 +50,6 @@
 .logoanimation {
 
   border-radius: 50%;
-  /* -webkit-border-radius: 50%; */
-  transform: translateZ(0);
-
-  
 
   --s: 250px;
   /* the size of the image */

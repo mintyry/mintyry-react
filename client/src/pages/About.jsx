@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 
 function About() {
     return (
+        // framer motion to fade in page
         <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -14,21 +15,21 @@ function About() {
             transition={{duration: 1, ease: 'easeOut'}}
         >
             <Grid container spacing={1}>
+                {/* art is placed as background image */}
                 <Grid item xs={12} md={3} className="selfport" sx={{ display: 'flex', alignItems: 'flex-end' }}>
-                    {/* <img src={selfPortrait} /> */}
+                    {/* title of art */}
                     <p style={{ backgroundColor: 'black', width: '100%', paddingLeft: '1em' }}> "INWARD" - minty.ry, 7/25/22 </p>
                 </Grid>
                 <Grid item xs={12} md={9}>
                     <Grid item xs={12}>
                         <h1 style={{ fontFamily: 'Reenie Beanie' }}>H E L L O,</h1>
                     </Grid>
+                    {/* actual bio */}
                     <Grid item xs={12}>
                         <Box sx={{
                             display: 'flex',
                             background: 'linear-gradient(to right bottom, rgba(120, 255, 219, 0.4), rgba(255, 168, 229, 0.4))',
                             width: '100%',
-                            // height: '55vh',
-                            // opacity: '30%',
                             borderRadius: '16px'
                         }}>
                             <p style={{ paddingLeft: "1em", paddingRight: "1em", lineHeight: "2" }} className="whitefont">

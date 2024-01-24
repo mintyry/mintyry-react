@@ -21,6 +21,7 @@
     box-shadow: 0 0 10px rgba(216, 255, 168, 0.857);
 }
 
+/* remove link underlines */
 .noTextDec {
     text-decoration: none;
 }

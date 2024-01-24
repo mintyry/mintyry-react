@@ -3,6 +3,7 @@ import Icon from "@mui/material/Icon";
 import "@fortawesome/fontawesome-free/css/all.css";
 import '../styles/Ticker.css'
 
+// ticker with applicable tech stack icons
 function Ticker() {
     return (
         <>
@@ -47,8 +48,6 @@ function Ticker() {
                         <i style={{ fontSize: "1.7rem", marginRight: "1.5em" }} className="devicon-heroku-original iconcolor"></i>
                         <i style={{ fontSize: "1.7rem", marginRight: "1.5em" }} className="devicon-devicon-plain"></i>
                     </marquee>
-
-                    {/* <p>Hi</p> */}
                 </Grid>
             </Grid>
         </>

@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 // First page that runs
-
 function Welcome() {
     // initially setting states to false (dont show)
     const [showMessage, setMessage] = useState(false);
@@ -17,6 +16,7 @@ function Welcome() {
 
         // when this function runs, setMessage state is changed to true, and will display horcrux msg.
         function clickWelcome() {
+            // this is so fade-out happens before state changes; otherwise, it wont show
             const welcome = document.querySelector('#welcome');
             welcome.classList.add('fade-out');
 
@@ -24,7 +24,7 @@ function Welcome() {
                 setMessage(true);
             }, 1000);
         };
-
+        
         // event listener on page; when page is clicked, runs clickWelcome()
         document.addEventListener('click', clickWelcome);
 

@@ -1,5 +1,6 @@
 import AnimatedCursor from 'react-animated-cursor';
 
+// make custom cursor
 function AnimCursor() {
     return (
         <AnimatedCursor

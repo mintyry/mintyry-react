@@ -88,6 +88,7 @@ function Contact() {
                 }}>
                     <form onSubmit={handleSubmit}>
                         <Grid container spacing={2} sx={{ p: '2em' }}>
+                              {/* name field */}
                             <Grid item xs={6}>
                                 <TextField
                                     id="name"
@@ -105,6 +106,7 @@ function Contact() {
                                     errors={state.errors}
                                 />
                             </Grid>
+                              {/* emailfield */}
                             <Grid item xs={6}>
                                 <TextField
                                     id="email"
@@ -122,6 +124,7 @@ function Contact() {
                                     errors={state.errors}
                                 />
                             </Grid>
+                              {/* message field */}
                             <Grid item xs={12}>
                                 <TextField
                                     id="filled-multiline-static"

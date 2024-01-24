@@ -4,9 +4,9 @@ import ButtonGroup from '@mui/material/ButtonGroup';
 import Box from '@mui/material/Box';
 import '../styles/Footer.css';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
-
+// made a custom mui theme for primary color
 const theme = createTheme({
   palette: {
     primary: {
@@ -18,6 +18,7 @@ const theme = createTheme({
 
 export default function Footer() {
   return (
+    // Component brought in from React
     <Box
       sx={{
         display: 'flex',
@@ -28,6 +29,7 @@ export default function Footer() {
         },
       }}
     >
+      {/* nav links, NavLink is styled to show active link */}
       <ThemeProvider theme={theme}>
         <ButtonGroup variant="text" aria-label="text button group" color="primary" className="links">
           <NavLink to="/contact" className="noTextDec">

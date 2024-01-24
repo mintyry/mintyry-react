@@ -5,6 +5,7 @@ export default function ErrorPage() {
   const error = useRouteError();
   console.error(error);
 
+  // error provided by vite/react
   return (
     <motion.div
       id="error-page"

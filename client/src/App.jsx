@@ -10,7 +10,7 @@ import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import BottomNavigation from "@mui/material/BottomNavigation";
 import Container from "@mui/material/Container";
-
+// framermotion to animate page transitions & custom cursor
 import { AnimatePresence } from 'framer-motion';
 import { motion } from 'framer-motion';
 import AnimCursor from './components/AnimatedCursor';

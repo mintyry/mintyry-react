@@ -2,6 +2,7 @@
 background-color: transparent;
 }
 
+/* following is animation for reveal project descriptions */
 #description {
     background-color:  rgba(255, 255, 255, 0.1);
     border-radius: 10px;
@@ -27,6 +28,7 @@ background-color: transparent;
  width: 100%;
 }
 
+/* for images */
 .quilt {
   transition: all 0.8s ease;
 }

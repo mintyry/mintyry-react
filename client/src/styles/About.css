@@ -1,3 +1,4 @@
+/* various styling */
 .whitefont {
     color: white;
 }
@@ -10,6 +11,7 @@
     text-decoration: line-through;
 }
 
+/* gives background art for about me div */
 .selfport {
     background-image: url('../assets/aboutmeart.PNG');
     background-position: center;
