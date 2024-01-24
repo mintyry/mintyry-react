@@ -127,7 +127,7 @@ function Contact() {
                                     id="filled-multiline-static"
                                     label="Message"
                                     multiline
-                                    rows={4}
+                                    rows={8}
                                     defaultValue="Send me an email me here!"
                                     variant="filled"
                                     fullWidth

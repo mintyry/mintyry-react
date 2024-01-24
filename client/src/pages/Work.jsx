@@ -270,7 +270,7 @@ export default function Work() {
                                 <>
                                     {/* shows app name */}
                                     <div className="project" style={{}}>
-                                        <p className="removeMargins" style={{ fontSize: '1.6rem', color: 'black' }}>
+                                        <p className="removeMargins" style={{ fontSize: '1.6rem', color: 'black', paddingTop:'0.2em', paddingBottom:'0.2em'}}>
                                             &gt;&gt;&nbsp;{showProject.title}&nbsp;&lt;&lt;
                                         </p>
                                     </div>
