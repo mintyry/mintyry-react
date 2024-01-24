@@ -76,7 +76,7 @@ black smoke image : https://www.freepik.com/free-photo/abstract-wallpaper-backgr
 
 image overlay for work and if statement to remove extra quilt images gracefully, Xpert AI<br>
 
-avatar border animation: https://codepen.io/t_afif/pen/JjLVLPL for avatar border animation
+avatar border animation: https://codepen.io/t_afif/pen/JjLVLPL, Temani Afif
 
 <a id="Questions"></a>
 ## Questions 📭
