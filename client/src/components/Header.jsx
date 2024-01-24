@@ -10,7 +10,7 @@ function Header() {
           <Link to="/home" className="noTextDec">
             {/* <div className="glitch" data-text="MINTY.RY">MINTY.RY</div>
         <div className="glow">MINTY.RY</div> */}
-            <p class="glitch" style={{ fontFamily: 'Impact, Haettenschweiler, Arial Narrow Bold, sans-serif'}}>
+            <p className="glitch" style={{ fontFamily: 'Impact, Haettenschweiler, Arial Narrow Bold, sans-serif'}}>
               <span style={{ fontFamily: 'Impact, Haettenschweiler, Arial Narrow Bold, sans-serif'}} aria-hidden="true">MINTY.RY</span>
               MINTY.RY
               <span style={{ fontFamily: 'Impact, Haettenschweiler, Arial Narrow Bold, sans-serif'}}  aria-hidden="true">MINTY.RY</span>
