@@ -8,7 +8,8 @@ After the welcome message fades out, the user is brought home, where they see my
 
 My motivation for this portfolio was to convey my passion as well as the accumulation of my development skillset up to this point with React. I also learned a plethora of new things along the way: use Material UI, CSS animations, aniamted cursors, Formspree, and so much more! The logic of conditionally rendering compoents, as well as intentionally delaying stateful changes were some of the keys that allowed me to produce the fruits of my labor.
 
-Please enjoy the journey that went into making this portfolio.
+Please enjoy the journey that went into making this portfolio:<br>
+[https://minty-ry-portfolio.netlify.app/work](https://minty-ry-portfolio.netlify.app/)
 
 ## Table of Contents
 
