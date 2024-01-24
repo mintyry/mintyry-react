@@ -72,7 +72,7 @@
 
 
 
-/* @keyframes outlineAnimation {
+@keyframes outlineAnimation {
   0% {
   
     outline: calc(var(--s)/2) solid rgba(155, 96, 123, 0.6);
@@ -103,4 +103,4 @@
     outline: calc(var(--s)/2) solid rgba(155, 96, 123, 0.6);
     outline-offset: calc(var(--s)/-2);
   }
-} */
+}
