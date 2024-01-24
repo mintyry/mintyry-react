@@ -13,7 +13,7 @@ import Container from "@mui/material/Container";
 
 import { AnimatePresence } from 'framer-motion';
 import { motion } from 'framer-motion';
-import AnimatedCursor from 'react-animated-cursor';
+import AnimCursor from './components/AnimatedCursor';
 
 function App() {
   // using location to read what path/page we are on; states are for hiding header and footer
@@ -36,12 +36,12 @@ function App() {
         !showPortfolio
           ?
           <>
-            <AnimatedCursor />
+            <AnimCursor />
             <Welcome />
           </>
           :
           <>
-            <AnimatedCursor />
+            <AnimCursor />
             {/* HEADER  */}
             <motion.div
               initial={{ opacity: 0 }}
