@@ -230,7 +230,7 @@ export default function Work() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 1, ease: 'easeOut' }}
+            transition={{ duration: 2, ease: 'easeOut' }}
         >
             {/* image quilt */}
             <Grid container >

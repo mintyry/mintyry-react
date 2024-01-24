@@ -76,10 +76,11 @@ function Contact() {
     // de-facto page pre-contact form submission
     return (
         <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-        >
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 1, ease: 'easeOut' }}
+            >
             {/* left side form, right side links to other platforms */}
             <Grid container spacing={1}>
                 <Grid item xs={9} sx={{
