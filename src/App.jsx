@@ -74,7 +74,7 @@ function App() {
               <Grid item sx={{ width: '100%' }} mb={5}>
                 <Container >
                   {/* outlet injects page here */}
-                  <AnimatePresence key={location.pathname} mode={'wait'}>
+                  <AnimatePresence location={location} key={location.pathname} mode={'wait'}>
                     <Outlet />
                   </AnimatePresence>
                 </Container>
