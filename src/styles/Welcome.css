@@ -1,0 +1,598 @@
+/* for welcome and basically global */
+
+
+* {
+  /* keep this for testing */
+  /* outline: 2px solid pink; */
+  color:#b9ffda;
+  font-family: 'Josefin Sans', Arial, Helvetica, sans-serif
+}
+
+.noTextDec {
+  text-decoration: none;
+}
+
+a.active {
+  outline: white 1px solid;
+  border-radius: 10px;
+}
+
+body {
+  cursor: none !important;
+  background: radial-gradient(#242424, #1e1e1e, #111111, #000000);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* animated bg */
+  background-image: url('../assets/blacksmoke.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: slidein 50s;
+  animation: slidein 50s;
+
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+
+ 
+
+}
+
+@-webkit-keyframes slidein {
+  from {
+    background-position: top;
+    background-size: 3000px;
+  }
+
+  to {
+    background-position: -100px 0px;
+    background-size: 2750px;
+  }
+}
+
+@keyframes slidein {
+  from {
+    background-position: top;
+    background-size: 3000px;
+  }
+
+  to {
+    background-position: -100px 0px;
+    background-size: 2750px;
+  }
+
+}
+
+/* error page font color */
+#error-page {
+  color: rgb(232, 137, 153);
+}
+
+/* add transparency */
+.transparent {
+  background-color: transparent !important;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.content {
+  flex: 1;
+  overflow-y: auto;
+  position: relative;
+}
+
+#manual-pad-left {
+  padding-left: 1em;
+}
+
+
+/* fade out anim for welcome */
+.gone {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+/* fade out anim for forcrux msg */
+.horcruxdone {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.hxfade-out {
+  opacity: 0;
+}
+
+
+
+
+
+/* so svg doesn't break page on smaller dimensions */
+svg {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+
+/* animated text */
+#one-w {
+  stroke-dasharray: 154.53529357910156;
+  stroke-dashoffset: 154.53529357910156;
+  animation: 0.5s onew linear forwards;
+  animation-delay: 2s;
+}
+
+@keyframes onew {
+  0% {
+    stroke-dashoffset: 154.53529357910156;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+#one-e {
+  stroke-dasharray: 77.61138153076172;
+  stroke-dashoffset: 77.61138153076172;
+  animation: 0.5s onee linear forwards;
+  animation-delay: 2.5s;
+}
+
+@keyframes onee {
+  0% {
+    stroke-dashoffset: 77.61138153076172;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+#one-l {
+  stroke-dasharray: 59.53776550292969;
+  stroke-dashoffset: 59.53776550292969;
+  animation: 0.2s onel linear forwards;
+  animation-delay: 3s;
+}
+
+@keyframes onel {
+  0% {
+    stroke-dashoffset: 59.53776550292969;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+#one-c {
+  stroke-dasharray: 58.59319305419922;
+  stroke-dashoffset: 58.59319305419922;
+  animation: 0.2s onec linear forwards;
+  animation-delay: 3.5s;
+}
+
+@keyframes onec {
+  0% {
+    stroke-dashoffset: 58.59319305419922;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+#one-o {
+  stroke-dasharray: 50.501827239990234;
+  stroke-dashoffset: 50.501827239990234;
+  animation: 0.2s oneo linear forwards;
+  animation-delay: 4s;
+}
+
+@keyframes oneo {
+  0% {
+    stroke-dashoffset: 50.501827239990234;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+#one-m {
+  stroke-dasharray: 122.5776138305664;
+  stroke-dashoffset: 122.5776138305664;
+  animation: 0.2s onem linear forwards;
+  animation-delay: 4.5s;
+}
+
+@keyframes onem {
+  0% {
+    stroke-dashoffset: 122.5776138305664;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+#one-e-second {
+  stroke-dasharray: 70.73726654052734;
+  stroke-dashoffset: 70.73726654052734;
+  animation: 0.2s onees linear forwards;
+  animation-delay: 5s;
+}
+
+@keyframes onees {
+  0% {
+    stroke-dashoffset: 70.73726654052734;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+#one-dot-first {
+  stroke-dasharray: 0.7035197019577026;
+  stroke-dashoffset: 0.7035197019577026;
+  animation: 0.2s onedf linear forwards;
+  animation-delay: 5.5s;
+}
+
+@keyframes onedf {
+  0% {
+    stroke-dashoffset: 0.7035197019577026;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+#one-dot-second {
+  stroke-dasharray: 5.390911102294922;
+  stroke-dashoffset: 5.390911102294922;
+  animation: 0.2s oneds linear forwards;
+  animation-delay: 5.75s;
+}
+
+@keyframes oneds {
+  0% {
+    stroke-dashoffset: 5.390911102294922;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+#one-dot-third {
+  stroke-dasharray: 0.7016089558601379;
+  stroke-dashoffset: 0.7016089558601379;
+  animation: 0.2s onedt linear forwards;
+  animation-delay: 6s;
+}
+
+@keyframes onedt {
+  0% {
+    stroke-dashoffset: 0.7016089558601379;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* second message */
+#two-t {
+  stroke-dasharray: 53.74624252319336;
+  stroke-dashoffset: 53.74624252319336;
+  animation: 0.2s twot linear forwards;
+  animation-delay: 1s;
+}
+
+@keyframes twot {
+  0% {
+    stroke-dashoffset: 53.74624252319336;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+#two-t-cross {
+  stroke-dasharray: 54.0112419128418;
+  stroke-dashoffset: 54.0112419128418;
+  animation: 0.2s twotc linear forwards;
+  animation-delay: 1.25s;
+}
+
+@keyframes twotc {
+  0% {
+    stroke-dashoffset: 54.0112419128418;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+#two-o {
+  stroke-dasharray: 58.480628967285156;
+  stroke-dashoffset: 58.480628967285156;
+  animation: 0.2s twoo linear forwards;
+  animation-delay: 1.75s;
+}
+
+@keyframes twoo {
+  0% {
+    stroke-dashoffset: 58.480628967285156;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+#two-m {
+  stroke-dasharray: 126.18976593017578;
+  stroke-dashoffset: 126.18976593017578;
+  animation: 0.3s twom linear forwards;
+  animation-delay: 2.25s;
+}
+
+@keyframes twom {
+  0% {
+    stroke-dashoffset: 126.18976593017578;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+#two-y {
+  stroke-dasharray: 22.272682189941406;
+  stroke-dashoffset: 22.272682189941406;
+  animation: 0.2s twoy linear forwards;
+  animation-delay: 2.75s;
+}
+
+@keyframes twoy {
+  0% {
+    stroke-dashoffset: 22.272682189941406;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+#two-y-cross {
+  stroke-dasharray: 61.164955139160156;
+  stroke-dashoffset: 61.164955139160156;
+  animation: 0.2s twoyc linear forwards;
+  animation-delay: 3s;
+}
+
+@keyframes twoyc {
+  0% {
+    stroke-dashoffset: 61.164955139160156;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+#two-h {
+  stroke-dasharray: 104.31822204589844;
+  stroke-dashoffset: 104.31822204589844;
+  animation: 0.2s twoh linear forwards;
+  animation-delay: 3.5s;
+}
+
+@keyframes twoh {
+  0% {
+    stroke-dashoffset: 104.31822204589844;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+#two-o-second {
+  stroke-dasharray: 53.20269012451172;
+  stroke-dashoffset: 53.20269012451172;
+  animation: 0.2s twoos linear forwards;
+  animation-delay: 4s;
+}
+
+@keyframes twoos {
+  0% {
+    stroke-dashoffset: 53.20269012451172;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+#two-r {
+  stroke-dasharray: 50.6392936706543;
+  stroke-dashoffset: 50.6392936706543;
+  animation: 0.2s twor linear forwards;
+  animation-delay: 4.5s;
+}
+
+@keyframes twor {
+  0% {
+    stroke-dashoffset: 50.6392936706543;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+#two-c {
+  stroke-dasharray: 54.06721496582031;
+  stroke-dashoffset: 54.06721496582031;
+  animation: 0.2s twoc linear forwards;
+  animation-delay: 5s;
+}
+
+@keyframes twoc {
+  0% {
+    stroke-dashoffset: 54.06721496582031;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+#two-r-second {
+  stroke-dasharray: 52.705528259277344;
+  stroke-dashoffset: 52.705528259277344;
+  animation: 0.2s twors linear forwards;
+  animation-delay: 5.5s;
+}
+
+@keyframes twors {
+  0% {
+    stroke-dashoffset: 52.705528259277344;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+#two-u {
+  stroke-dasharray: 76.96058654785156;
+  stroke-dashoffset: 76.96058654785156;
+  animation: 0.2s twou linear forwards;
+  animation-delay: 6s;
+}
+
+@keyframes twou {
+  0% {
+    stroke-dashoffset: 76.96058654785156;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+#two-x {
+  stroke-dasharray: 41.01964569091797;
+  stroke-dashoffset: 41.01964569091797;
+  animation: 0.2s twox linear forwards;
+  animation-delay: 6.5s;
+}
+
+@keyframes twox {
+  0% {
+    stroke-dashoffset: 41.01964569091797;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+#two-x-cross {
+  stroke-dasharray: 41.873199462890625;
+  stroke-dashoffset: 41.873199462890625;
+  animation: 0.2s twoxc linear forwards;
+  animation-delay: 6.75s;
+}
+
+@keyframes twoxc {
+  0% {
+    stroke-dashoffset: 41.873199462890625;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+#two-dot-first {
+  stroke-dasharray: 3.4212093353271484;
+  stroke-dashoffset: 3.4212093353271484;
+  animation: 0.2s twodf linear forwards;
+  animation-delay: 7.25s;
+}
+
+@keyframes twodf {
+  0% {
+    stroke-dashoffset: 3.4212093353271484;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+#two-dot-second {
+  stroke-dasharray: 8.134641647338867;
+  stroke-dashoffset: 8.134641647338867;
+  animation: 0.2s twods linear forwards;
+  animation-delay: 7.5s;
+}
+
+@keyframes twods {
+  0% {
+    stroke-dashoffset: 8.134641647338867;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+#two-dot-third {
+  stroke-dasharray: 1.8288180828094482;
+  stroke-dashoffset: 1.8288180828094482;
+  animation: 0.2s twodt linear forwards;
+  animation-delay: 7.75s;
+}
+
+@keyframes twodt {
+  0% {
+    stroke-dashoffset: 1.8288180828094482;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}

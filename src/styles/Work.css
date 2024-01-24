@@ -1,0 +1,80 @@
+.boxPics {
+background-color: transparent;
+}
+
+/* following is animation for reveal project descriptions */
+#description {
+    background-color:  rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    height: 100%;
+    animation: des-load 700ms ease-in 800ms;
+}
+
+/* for reveal anim */
+.hidden {
+  opacity: 0;
+}
+
+@keyframes des-load {
+  0% {
+    opacity: 0;
+  }
+  100% {
+   opacity: 1;
+  }
+}
+
+.dsPic {
+ width: 100%;
+}
+
+/* for images */
+.quilt {
+  transition: all 0.8s ease;
+}
+
+.quilt ul {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+.project {
+    background: linear-gradient( to right, transparent, #fff4d3, #78ffdb,  #78ffdb,  #78ffdb, #fff4d3, transparent);
+    text-align: center;
+}
+
+.removeMargins {
+  margin-block-start: 0px !important;
+  margin-block-end: 0px !important;
+  margin-inline-start: 0px !important;
+  margin-inline-end: 0px !important;
+}
+/* show texts on proj quilt images */
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+  }
+  
+  .projects:hover .image-overlay {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .image-overlay p {
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+  }
