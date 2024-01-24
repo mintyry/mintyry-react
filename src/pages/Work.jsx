@@ -13,7 +13,7 @@ import anyyes from '../assets/work/ay.png';
 import weather from '../assets/work/wuw.png';
 import quiztime from '../assets/work/qtart.png';
 import fullqt from '../assets/work/fullqt.png';
-import dotblog from '../assets/work/dotblog.png';
+import dotblog from '../assets/work/dotBlog.png';
 import fullblog from '../assets/work/fulldot.png';
 import firstportfolio from '../assets/work/firstport.png';
 import fullfirst from '../assets/work/fullmintypro.png';
