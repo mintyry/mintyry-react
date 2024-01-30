@@ -17,8 +17,8 @@ function Resume() {
                 <Box sx={{
                     display: "flex",
                     margin: "auto",
-                    height: "55vh",
-                    width: { xs: "55vw" }
+                    height: { xs: "100%", md:"55vh" },
+                    width: { xs: "100%", md: "55vw" }
                 }}>
                     <embed
                         src={resume}
