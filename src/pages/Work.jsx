@@ -17,6 +17,7 @@ import dotblog from '../assets/work/dotBlog.png';
 import fullblog from '../assets/work/fulldot.png';
 import firstportfolio from '../assets/work/firstport.png';
 import fullfirst from '../assets/work/fullmintypro.png';
+import liber from '../assets/work/liber.png';
 
 import Icon from "@mui/material/Icon";
 import "@fortawesome/fontawesome-free/css/all.css";
@@ -60,6 +61,8 @@ const ivsc = <i style={{ fontSize: "1.5rem", marginRight: "0.5em" }} className="
 const ichrome = <i style={{ fontSize: "1.5rem", marginRight: "0.5em" }} className="devicon-chrome-plain iconcolor"></i>;
 const ieslint = <i style={{ fontSize: "1.5rem", marginRight: "0.5em" }} className="devicon-eslint-original iconcolor"></i>;
 const iex = <i style={{ fontSize: "1.5rem", marginRight: "0.5em" }} className="devicon-express-original iconcolor"></i>;
+const igql = <i style={{ fontSize: "1.5rem", marginRight: "0.5em" }} className="devicon-graphql-plain iconcolor"></i>;
+const ithree = <i style={{ fontSize: "1.5rem", marginRight: "0.5em" }} className="devicon-threejs-original iconcolor"></i>;
 const idev = <i style={{ fontSize: "1.5rem", marginRight: "0.5em" }} className="devicon-devicon-plain iconcolor"></i>;
 
 
@@ -89,9 +92,36 @@ const itemData = [
         ]
     },
     {
+        img: liber,
+        title: '{ L I B E R }',
+        cols: 2,
+        url: 'https://liber-d603fbac9e96.herokuapp.com/',
+        ghub: 'https://github.com/mintyry/liber',
+        text: 'Liber is an interactive e-reader along with book-saving capabilities and a social media aspect -- think your Kindle, GoodReads, and saved-books-app combined. The motivation behind this app was to have a fun way to interact with your favorite reads and classic novels and to build upon our knowledge of graphql with React. We also used Blender in tandem with Threejs to build a 3D reader, but the real magic was learning to build our own database of books via graphql.',
+        fullimg: liber,
+        icons: [
+            icode,
+            iterminal,
+            ihtml,
+            icss,
+            ijs,
+            igithub,
+            igit,
+            inode,
+            idb,
+            imongo,
+            imui,
+            ichrome,
+            iex,
+            igql,
+            ieslint,
+            ithree
+        ]
+    },
+    {
         img: weather,
         title: 'What\'s Up Weather?',
-        cols: 2,
+        rows: 2,
         url: 'https://mintyry.github.io/whats-up-weather/',
         ghub: 'https://github.com/mintyry/whats-up-weather',
         text: 'What\'s Up Weather is a five-day forecast app, which utilizes the Day.js package to keep track of the day and time to pull corresponding weather data from the OpenWeather API. This app confirmed my confidence in CSS skills in that I found I had a much quicker time writing my own CSS than using a framework (at least for this project). It was rewarding being able to traverse through objects and the DOM, which allowed me to retrieve and display data while also returning user search history via local storage.',
@@ -105,30 +135,6 @@ const itemData = [
             igithub,
             igit,
             idb,
-        ]
-    },
-    {
-        img: dotblog,
-        title: '[dot]Blog',
-        rows: 2,
-        url: 'https://dotblog-2a215c6fdcb3.herokuapp.com',
-        ghub: 'https://github.com/mintyry/dotBlog',
-        text: 'dot[Blog] is my first project that builds the basic components of a social media website! This app uses databases on the back-end via MYSQL and Sequelize to persist user data. I also used password encryption to protect sensitive user login information.Additionally, rather than sticking to pure HTML, I added the Handlebars framework to dynamically render data from the database.Users of the site are able to create their own accounts, add comments, and add, update, and delete posts. I also ended up building a separate pure back-end social media app which would allow users to add friends with a NoSQL database. Feel free to ask me about it or checkout my GitHub!',
-        fullimg: fullblog,
-        icons: [
-            icode,
-            iterminal,
-            ihtml,
-            icss,
-            ijs,
-            igithub,
-            igit,
-            inode,
-            idb,
-            imysql,
-            isqlz,
-            ihbars,
-            iex
         ]
     },
     {
@@ -290,7 +296,7 @@ export default function Work() {
                                         </div>
                                         <div style={{ marginRight: '1em' }}>
                                             <a className="noTextDec" style={{ color: '#ec407a' }} href={showProject.ghub}>
-                                                <i style={{ fontSize: "2rem"}} class="devicon-github-original-wordmark"></i>                                             
+                                                <i style={{ fontSize: "2rem" }} class="devicon-github-original-wordmark"></i>
                                             </a>
                                         </div>
                                     </div>
