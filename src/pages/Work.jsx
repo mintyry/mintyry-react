@@ -18,6 +18,8 @@ import fullblog from '../assets/work/fulldot.png';
 import firstportfolio from '../assets/work/firstport.png';
 import fullfirst from '../assets/work/fullmintypro.png';
 import liber from '../assets/work/liber.png';
+import pyt from '../assets/work/pyt-page.png';
+import pytCard from '../assets/work/pyt-minty.png';
 
 import Icon from "@mui/material/Icon";
 import "@fortawesome/fontawesome-free/css/all.css";
@@ -41,7 +43,7 @@ const icss = <Icon sx={{ lineHeight: 'unset', marginRight: '0.5em' }} className=
 const ijs = <Icon sx={{ lineHeight: 'unset', marginRight: '0.5em' }} className="fa-brands fa-js iconcolor" />;
 const igithub = <Icon sx={{ lineHeight: 'unset', marginRight: '0.5em' }} className="fa-brands fa-square-github iconcolor" />;
 const igit = <Icon sx={{ lineHeight: 'unset', marginRight: '0.5em' }} className="fa-brands fa-git-alt iconcolor" />;
-const iboot = <Icon sx={{ lineHeight: 'unset', marginRight: '0.5em' }} className="fa-brands fa-bootstrap iconcolor" />;
+const iboot = <Icon sx={{ width: '1.2em', lineHeight: 'unset', marginRight: '0.7em' }} className="fa-brands fa-bootstrap iconcolor" />;
 const inode = <Icon sx={{ lineHeight: 'unset', marginRight: '0.5em' }} className="fa-brands fa-node-js iconcolor" />;
 const idb = <Icon sx={{ lineHeight: 'unset', marginRight: '0.5em' }} className="fa-solid fa-database iconcolor" />;
 const ireact = <Icon sx={{ lineHeight: 'unset', marginRight: '0.5em' }} className="fa-brands fa-react iconcolor" />;
@@ -157,20 +159,22 @@ const itemData = [
     },
 
     {
-        img: firstportfolio,
-        title: 'Minty.Ry Portfolio 1.0',
+        img: pytCard,
+        title: 'POKE YOUR TYPE!',
         cols: 2,
-        url: 'https://mintyry.github.io/Minty-Ry-Portfolio/',
-        ghub: 'https://github.com/mintyry/Minty-Ry-Portfolio',
-        text: 'This was my first portfolio! I was honestly very proud of it, because after just a week and a half of learning software development, I was able to craft this up. I received several pleasant feedback from people assuming I had prior experience, but I really hadn\'t! (Unless you count Myspace from back in 2007.) I still think it looks really nice for a basic webpage, and it is really satisfying for me to see how far I\'ve come on this dev journey -- from that to what you are seeing right before you. By exploring my portfolio, I hope you enjoy this ride with me.',
-        fullimg: fullfirst,
+        url: 'https://mintyry.github.io/poke-your-type/',
+        ghub: 'https://github.com/mintyry/poke-your-type',
+        text: 'Poke Your Type! is a Pokémon card generator, which displays your favorite Pokémon of each type. I was inspired by centropkmn.com to make this, because while their generator was fun, there were some aspects I would have liked to have changed and add on, which Poke Your Type does! Poke Your Type! presents a clean, fresh, and easy-to-use interface, which allows users to select their favorite Pokémon of each type, which will display in a user-generated Pokécard. Additionally, users can toggle their Pokémon to be shiny and customize the color scheme of their final card. ',
+        fullimg: pyt,
         icons: [
             icode,
             iterminal,
             ihtml,
             icss,
+            ijs,
             igithub,
-            igit
+            igit,
+            iboot,
         ]
     },
     {
@@ -296,7 +300,7 @@ export default function Work() {
                                         </div>
                                         <div style={{ marginRight: '1em' }}>
                                             <a className="noTextDec" style={{ color: '#ec407a' }} href={showProject.ghub}>
-                                                <i style={{ fontSize: "2rem" }} class="devicon-github-original-wordmark"></i>
+                                                <i style={{ fontSize: "2rem" }} className="devicon-github-original-wordmark"></i>
                                             </a>
                                         </div>
                                     </div>
