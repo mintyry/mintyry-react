@@ -97,8 +97,8 @@ const itemData = [
         img: liber,
         title: '{ L I B E R }',
         cols: 2,
-        url: 'https://liber-d603fbac9e96.herokuapp.com/',
-        ghub: 'https://github.com/mintyry/liber',
+        url: 'https://liber-com-71c194b85d8a.herokuapp.com',
+        ghub: 'https://github.com/mintyry/Liber-2.0',
         text: 'Liber is an interactive e-reader along with book-saving capabilities and a social media aspect -- think your Kindle, GoodReads, and saved-books-app combined. The motivation behind this app was to have a fun way to interact with your favorite reads and classic novels and to build upon our knowledge of graphql with React. We also used Blender in tandem with Threejs to build a 3D reader, but the real magic was learning to build our own database of books via graphql.',
         fullimg: liber,
         icons: [
