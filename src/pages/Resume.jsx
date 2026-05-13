@@ -1,5 +1,5 @@
 import '../styles/About.css';
-import resume from '../assets/RyanEclarin_resume26_dev.pdf';
+import resume from '../assets/REclarin_resume26.pdf';
 import Box from "@mui/material/Box";
 import { motion } from 'framer-motion';
 
