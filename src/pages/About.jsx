@@ -39,6 +39,7 @@ function About() {
                                 <br />
                                 <br />
                                 This portfolio is one of multiple passion-projects of mine that will surely continue to grow. In making this, I devoted hours and hours learning new things that I could implement to try and make something I could be proud of. I would love to say a lot of blood, sweat, and tears went into making this, but if I'm being real, it was only stress, anxiety, and lack of sleep (I'm currently on a deadline as I write this.). But this is all to say that I put 110% of myself into this. This is more than just my passion. I put my soul into this.  What you see here is my <a className="noTextDec" style={{ fontFamily: 'Reenie Beanie', fontSize: '1.7rem' }} href="https://en.wikipedia.org/wiki/Magical_objects_in_Harry_Potter#Horcruxes">horcrux</a>.
+                                Thanks for reading.
                             </p>
                         </Box >
                     </Grid>
